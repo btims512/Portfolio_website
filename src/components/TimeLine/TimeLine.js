@@ -66,7 +66,27 @@ const Timeline = () => {
   return (
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
-      <SectionText>I will come back and will this out later.</SectionText>
+      <img
+        className="profilePic"
+        src="../images/profile.png"
+        style={{ width: "300px" }}
+      />{" "}
+      <br />
+      <SectionText
+        style={{ fontSize: "18px", borderStyle: "solid", padding: "10px" }}
+      >
+        My name is Ben Tims and I am a full stack software engineer based out of
+        Denver Colorado. I got into programming in 2020, starting with
+        self-taught online courses, then gradually making the move to joining a
+        bootcamp. I have 8 years of experience of Apple technical support where
+        I mastered both iOS and MacOS software. I spent 7 years of my time in
+        the company working in learning and devolvement where I felt it my
+        passion to teach others. After years of teaching technical content to
+        advisors, I couldn't take it anymore and had to know how all of this
+        works under the hood. Now here I am!
+      </SectionText>
+      <br />
+      <br />
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (

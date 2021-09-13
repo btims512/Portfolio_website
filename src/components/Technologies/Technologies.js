@@ -1,5 +1,5 @@
 import React from "react";
-import { DiFirebase, DiReact, DiZend } from "react-icons/di";
+import { DiFirebase, DiReact, DiZend, DiNodejsSmall } from "react-icons/di";
 import {
   Section,
   SectionDivider,
@@ -19,15 +19,32 @@ const Technologies = () => (
     <SectionDivider />
     <br />
     <SectionTitle>Technologies</SectionTitle>
-    <SectionText>I will come back and fill this out later.</SectionText>
+    <SectionText>
+      <List>
+        {/* <ListItem>Javascript</ListItem> */}
+        <img src="../images/JS.jpg" style={{ width: "60px" }} />{" "}
+        <img src="../images/react.png" style={{ width: "60px" }} />{" "}
+        <img src="../images/html.png" style={{ width: "65px" }} />{" "}
+        <img src="../images/css.png" style={{ width: "60px" }} />{" "}
+        <img src="../images/bootstrap.png" style={{ width: "80px" }} />{" "}
+        <img src="../images/MongoDB.png" style={{ width: "100px" }} />{" "}
+        <img src="../images/express.png" style={{ width: "100px" }} />{" "}
+        <img src="../images/node.png" style={{ width: "90px" }} />{" "}
+        <img src="../images/ejs.png" style={{ width: "80px" }} />{" "}
+        <img src="../images/git.png" style={{ width: "100px" }} />{" "}
+        <img src="../images/github.jpg" style={{ width: "80px" }} />{" "}
+        <img src="../images/vsc2.png" style={{ width: "60px" }} />{" "}
+        {/* <img src="../images/json.jpg" style={{ width: "125px" }} />{" "} */}
+      </List>
+    </SectionText>
     <List>
       <ListItem>
         <DiReact size="3rem" />
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            React.js
+            Experience with React, Javascript, <br />
+            HTML and CSS
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -37,17 +54,19 @@ const Technologies = () => (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node.js and Databases
+            Node.js and Databases <br />
+            such as MongoDB and SQL
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiZend size="3rem" />
+        <DiNodejsSmall size="3rem" />
         <ListContainer>
-          <ListTitle>Example 3</ListTitle>
+          <ListTitle>Frameworks & Libraries</ListTitle>
           <ListParagraph>
             Experience with <br />
-            React.js
+            Bootstrap, Express.js, <br />
+            React.js and EJS
           </ListParagraph>
         </ListContainer>
       </ListItem>

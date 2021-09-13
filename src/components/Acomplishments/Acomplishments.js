@@ -11,6 +11,10 @@ import { data } from "../../constants/constants";
 const Acomplishments = () => (
   <Section>
     <SectionTitle>Personal Accomplishments</SectionTitle>
+    <img
+      src="../images/acc_ certification.png"
+      style={{ width: "775px" }}
+    />{" "}
     <Boxes>
       {data.map((card, index) => (
         <Box key={index}>
