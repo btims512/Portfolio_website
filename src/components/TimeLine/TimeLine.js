@@ -67,14 +67,13 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <img
+        className="aboutme"
         className="profilePic"
         src="../images/profile.png"
         style={{ width: "300px" }}
       />{" "}
-      <br />
-      <SectionText
-        style={{ fontSize: "18px", borderStyle: "solid", padding: "10px" }}
-      >
+      <SectionText style={{ fontSize: "18px", padding: "10px" }}>
+        {" "}
         My name is Ben Tims and I am a full stack software engineer based out of
         Denver Colorado. I got into programming in 2020, starting with
         self-taught online courses, then gradually making the move to joining a
@@ -85,6 +84,9 @@ const Timeline = () => {
         advisors, I couldn't take it anymore and had to know how all of this
         works under the hood. Now here I am!
       </SectionText>
+      <br />
+      <br />
+      <div style={{ fontSize: "35px" }}>My Tech Journey</div>
       <br />
       <br />
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>

@@ -12,15 +12,20 @@ const Hero = (props) => (
   <Section row nopadding>
     <LeftSection>
       <SectionTitle main center>
-        Welcome to <br />
-        My Personal Portfolio
+        {" "}
+        <br />
+        Benjamin Tims
       </SectionTitle>
       <SectionText>Full Stack Software Engineer</SectionText>
+      <Button
+        onClick={() =>
+          window.open("https://benjamintimsresume.netlify.app/", "_blank")
+        }
+      >
+        {" "}
+        View Resume{" "}
+      </Button>
     </LeftSection>
-    <Button onClick={() => (window.location = "https://google.com")}>
-      {" "}
-      Resume{" "}
-    </Button>
   </Section>
 );
 

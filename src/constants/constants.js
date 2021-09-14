@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Insights",
     description:
-      "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.",
+      "Led front-end development in crowd-sourced business review app highlighting local minority owned businesses in the Austin area. Implemented the use of Yelp s API to achieve backend data with full CRUD functionality and deployed app using AWS.",
     image: "/images/1.png",
     tags: ["React", "CSS", "MongoDB", "Node"],
     source: "https://main.d32hto66cg6s2c.amplifyapp.com",
@@ -12,7 +12,7 @@ export const projects = [
   {
     title: "Chatthew",
     description:
-      "Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor. Hodor hodor; hodor hodor - hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor HODOR! Hodor hodor... Hodor hodor hodor...",
+      "Developed chat app platform integrating the use of WebSockets. Complete with account sign-in landing page then dashboard displaying chatrooms. Implemented the use of styled-components and ant-design for styling. Launched app using Netlify.",
     image: "/images/2.png",
     tags: ["React", "JavaScript", "ChatEngine.io"],
     source: "https://chatthew.netlify.app/",
@@ -22,21 +22,21 @@ export const projects = [
   {
     title: "Find Dat Gif!",
     description:
-      "Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless. Schraeder drop gondy, rail fatty slash gear jammer steeps clipless rip bowl couloir bomb hole berm. Huck cruiser crank endo, sucker hole piste ripping ACL huck greasy flow face plant pinner. Japan air Skate park big ring trucks shuttle stoked rock-ectomy",
+      "A fun app to find the perfect GIF for how you're feeling including a trending home page and random section if you're not unsure. Developed using Express and consuming Giphy's API via Node-Fetch.",
     image: "/images/3.jpg",
-    tags: ["JavaScript", "EJS", "Node-Fetch"],
+    tags: ["JavaScript", "EJS", "Node-Fetch,", "CSS"],
     source: "#",
     visit: "https://github.com/btims512/projects",
     id: 2,
   },
   {
-    title: "Project 4",
+    title: 'Exchange Rates "R" Us',
     description:
-      "Dingy I'm tellin' you rhubaahb Bangah Jo-Jeezly got in a gaum Powrtland stove up dooryahd from away, paypuh bowee batrees owt Have a good one. hahd tellin' not knowin', p'dayduhs scrod You is sum wicked suhmart over t'. Lobstah buggin' bogan railed 'em gettin' ugly bluebries ayuhpawt Jo-Jeezly, front dooryahd huck naw got in a gaum bluebries.",
-    image: "/images/4.png",
-    tags: ["React", "ChatEngine"],
+      "An app designed for simplicity, yet effectiveness when needed. I personally used this app many times while traveling throughout Mexico for help with ever-changing exchange rates. Developed using React and Node-Fetch, this app consumes exchangeratesapi.io and is constantly updated for latest rates.",
+    image: "/images/exchangeratepic.png",
+    tags: ["React", "Node-Fetch"],
     source: "https://google.com",
-    visit: "https://google.com",
+    visit: "https://github.com/btims512/exchangeRate",
     id: 3,
   },
 ];
