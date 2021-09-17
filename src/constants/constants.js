@@ -25,7 +25,7 @@ export const projects = [
       "A fun app to find the perfect GIF for how you're feeling including a trending home page and random section if you're not unsure. Developed using Express and consuming Giphy's API via Node-Fetch.",
     image: "/images/3.jpg",
     tags: ["JavaScript", "EJS", "Node-Fetch,", "CSS"],
-    source: "#",
+    source: "https://morning-inlet-63571.herokuapp.com/",
     visit: "https://github.com/btims512/projects",
     id: 2,
   },
@@ -35,7 +35,7 @@ export const projects = [
       "An app designed for simplicity, yet effectiveness when needed. I personally used this app many times while traveling throughout Mexico for help with ever-changing exchange rates. Developed using React and Node-Fetch, this app consumes exchangeratesapi.io and is constantly updated for latest rates.",
     image: "/images/exchangeratepic.png",
     tags: ["React", "Node-Fetch"],
-    source: "https://google.com",
+    source: "https://exchangeratesrus.netlify.app/",
     visit: "https://github.com/btims512/exchangeRate",
     id: 3,
   },
@@ -64,6 +64,6 @@ export const TimeLineData = [
 
 export const data = [
   { number: 8, text: "Years with Apple" },
+  { number: 240, text: "Hours of class time" },
   { number: 25, text: "Projects in Github" },
-  { number: 500, text: "LinkedIn Connections" },
 ];

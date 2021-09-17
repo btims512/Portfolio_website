@@ -19,27 +19,9 @@ const Technologies = () => (
     <SectionDivider />
     <br />
     <SectionTitle>Technologies</SectionTitle>
-    <SectionText>
-      <List>
-        {/* <ListItem>Javascript</ListItem> */}
-        <img src="../images/JS.jpg" style={{ width: "60px" }} />{" "}
-        <img src="../images/react.png" style={{ width: "60px" }} />{" "}
-        <img src="../images/html.png" style={{ width: "65px" }} />{" "}
-        <img src="../images/css.png" style={{ width: "60px" }} />{" "}
-        <img src="../images/bootstrap.png" style={{ width: "80px" }} />{" "}
-        <img src="../images/MongoDB.png" style={{ width: "100px" }} />{" "}
-        <img src="../images/express.png" style={{ width: "100px" }} />{" "}
-        <img src="../images/node.png" style={{ width: "90px" }} />{" "}
-        <img src="../images/ejs.png" style={{ width: "80px" }} />{" "}
-        <img src="../images/git.png" style={{ width: "100px" }} />{" "}
-        <img src="../images/github.jpg" style={{ width: "80px" }} />{" "}
-        <img src="../images/vsc2.png" style={{ width: "60px" }} />{" "}
-        {/* <img src="../images/json.jpg" style={{ width: "125px" }} />{" "} */}
-      </List>
-    </SectionText>
     <List>
       <ListItem>
-        <DiReact size="3rem" />
+        <DiReact size="4rem" />
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
@@ -71,6 +53,131 @@ const Technologies = () => (
         </ListContainer>
       </ListItem>
     </List>
+    {
+       <SectionText>
+      <List>
+        <img
+          src="../images/JS.jpg"
+          style={{
+            height: "60px",
+            width: "70px",
+            border: "1px solid white",
+            borderRadius: "4px",
+            padding: "5px",
+          }}
+        />{" "}
+        <img
+          src="../images/react.png"
+          style={{
+            height: "60px",
+            width: "70px",
+            border: "1px solid white",
+            borderRadius: "4px",
+            padding: "5px",
+          }}
+        />{" "}
+        <img
+          src="../images/html.png"
+          style={{
+            height: "60px",
+            width: "70px",
+            border: "1px solid white",
+            borderRadius: "4px",
+            padding: "5px",
+          }}
+        />{" "}
+        <img
+          src="../images/css.png"
+          style={{
+            height: "60px",
+            width: "70px",
+            border: "1px solid white",
+            borderRadius: "4px",
+            padding: "5px",
+          }}
+        />{" "}
+        <img
+          src="../images/bootstrap.png"
+          style={{
+            height: "60px",
+            width: "70px",
+            border: "1px solid white",
+            borderRadius: "4px",
+            padding: "5px",
+          }}
+        />{" "}
+        <img
+          src="../images/MongoDB.png"
+          style={{
+            height: "60px",
+            width: "80px",
+            border: "1px solid white",
+            borderRadius: "4px",
+            padding: "5px",
+          }}
+        />{" "}
+        <img
+          src="../images/express.png"
+          style={{
+            height: "60px",
+            width: "80px",
+            border: "1px solid white",
+            borderRadius: "4px",
+            padding: "5px",
+          }}
+        />{" "}
+        <img
+          src="../images/node.png"
+          style={{
+            height: "60px",
+            width: "70px",
+            border: "1px solid white",
+            borderRadius: "4px",
+            padding: "5px",
+          }}
+        />{" "}
+        <img
+          src="../images/ejs.png"
+          style={{
+            height: "60px",
+            width: "80px",
+            border: "1px solid white",
+            borderRadius: "4px",
+            padding: "5px",
+          }}
+        />{" "}
+        <img
+          src="../images/git.png"
+          style={{
+            height: "60px",
+            width: "90px",
+            border: "1px solid white",
+            borderRadius: "4px",
+            padding: "5px",
+          }}
+        />{" "}
+        <img
+          src="../images/github.jpg"
+          style={{
+            height: "60px",
+            width: "90px",
+            border: "1px solid white",
+            borderRadius: "4px",
+            padding: "5px",
+          }}
+        />{" "}
+        <img
+          src="../images/vsc2.png"
+          style={{
+            height: "60px",
+            width: "80px",
+            border: "1px solid white",
+            borderRadius: "4px",
+            padding: "5px",
+          }}
+        />{" "}
+      </List>
+    </SectionText> }
   </Section>
 );
 
