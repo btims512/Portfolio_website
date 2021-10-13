@@ -25,7 +25,7 @@ export const projects = [
       "A fun app to find the perfect GIF for how you're feeling including a trending home page and random section if you're not unsure. Developed using Express and consuming Giphy's API via Node-Fetch.",
     image: "/images/3.jpg",
     tags: ["JavaScript", "EJS", "Node-Fetch,", "CSS"],
-    source: "https://morning-inlet-63571.herokuapp.com/",
+    source: "https://finddatgif.herokuapp.com/",
     visit: "https://github.com/btims512/projects",
     id: 2,
   },
