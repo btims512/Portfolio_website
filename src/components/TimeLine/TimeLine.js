@@ -54,7 +54,6 @@ const Timeline = () => {
   };
 
   // snap back to beginning of scroll when window is resized
-  // avoids a bug where content is covered up if coming from smaller screen
   useEffect(() => {
     const handleResize = () => {
       scroll(carouselRef.current, 0);
@@ -76,11 +75,11 @@ const Timeline = () => {
       />{" "}
       <SectionText style={{ fontSize: "18px", padding: "10px" }}>
         {" "}
-        My name is Ben Tims and I am a full stack software engineer based out of
-        Denver Colorado. I got into programming in 2019, starting with
+        Hello! My name is Ben Tims and I am a full-stack software engineer based
+        out of Denver Colorado. I got into programming in 2019, starting with
         self-taught online courses, then gradually making the move to joining a
-        bootcamp. I have 8 years of experience of Apple technical support where
-        I mastered both iOS and MacOS software. I spent 7 years of my time in
+        bootcamp. I have 8 years of experience in Apple technical support where
+        I mastered both iOS and macOS software. I spent 7 years of my time in
         the company working in learning and devolvement where I felt it was my
         calling to teach others. After years of teaching technical content to
         advisors, my insatiable curiosity got the best of me and I had to know
