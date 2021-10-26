@@ -14,10 +14,12 @@ import {
   ListTitle,
 } from "./TechnologiesStyles";
 import Zoom from "react-reveal/Zoom";
+import TechList from "../TechList/TechList";
+import Bounce from "react-reveal/Bounce";
 
 const Technologies = () => (
-  <Zoom>
-    <Section id="tech">
+  <Section id="tech">
+    <Zoom>
       <SectionDivider />
       <br />
       <SectionTitle>Technologies</SectionTitle>
@@ -55,134 +57,9 @@ const Technologies = () => (
           </ListContainer>
         </ListItem>
       </List>
-    </Section>
-  </Zoom>
-
-  /* {
-       <SectionText>
-      <List>
-        <img
-          src="../images/JS.jpg"
-          style={{
-            height: "60px",
-            width: "70px",
-            border: "1px solid white",
-            borderRadius: "4px",
-            padding: "5px",
-          }}
-        />{" "}
-        <img
-          src="../images/react.png"
-          style={{
-            height: "60px",
-            width: "70px",
-            border: "1px solid white",
-            borderRadius: "4px",
-            padding: "5px",
-          }}
-        />{" "}
-        <img
-          src="../images/html.png"
-          style={{
-            height: "60px",
-            width: "70px",
-            border: "1px solid white",
-            borderRadius: "4px",
-            padding: "5px",
-          }}
-        />{" "}
-        <img
-          src="../images/css.png"
-          style={{
-            height: "60px",
-            width: "70px",
-            border: "1px solid white",
-            borderRadius: "4px",
-            padding: "5px",
-          }}
-        />{" "}
-        <img
-          src="../images/bootstrap.png"
-          style={{
-            height: "60px",
-            width: "70px",
-            border: "1px solid white",
-            borderRadius: "4px",
-            padding: "5px",
-          }}
-        />{" "}
-        <img
-          src="../images/MongoDB.png"
-          style={{
-            height: "60px",
-            width: "80px",
-            border: "1px solid white",
-            borderRadius: "4px",
-            padding: "5px",
-          }}
-        />{" "}
-        <img
-          src="../images/express.png"
-          style={{
-            height: "60px",
-            width: "80px",
-            border: "1px solid white",
-            borderRadius: "4px",
-            padding: "5px",
-          }}
-        />{" "}
-        <img
-          src="../images/node.png"
-          style={{
-            height: "60px",
-            width: "70px",
-            border: "1px solid white",
-            borderRadius: "4px",
-            padding: "5px",
-          }}
-        />{" "}
-        <img
-          src="../images/ejs.png"
-          style={{
-            height: "60px",
-            width: "80px",
-            border: "1px solid white",
-            borderRadius: "4px",
-            padding: "5px",
-          }}
-        />{" "}
-        <img
-          src="../images/git.png"
-          style={{
-            height: "60px",
-            width: "90px",
-            border: "1px solid white",
-            borderRadius: "4px",
-            padding: "5px",
-          }}
-        />{" "}
-        <img
-          src="../images/github.jpg"
-          style={{
-            height: "60px",
-            width: "90px",
-            border: "1px solid white",
-            borderRadius: "4px",
-            padding: "5px",
-          }}
-        />{" "}
-        <img
-          src="../images/vsc2.png"
-          style={{
-            height: "60px",
-            width: "80px",
-            border: "1px solid white",
-            borderRadius: "4px",
-            padding: "5px",
-          }}
-        />{" "}
-      </List>
-    </SectionText> } */
+    </Zoom>
+    <Bounce right></Bounce>
+  </Section>
 );
 
 export default Technologies;

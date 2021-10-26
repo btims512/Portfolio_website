@@ -1,33 +1,23 @@
 export const projects = [
   {
-    title: "Insights",
+    title: "Instagram Clone",
     description:
-      "Led front-end development in crowd-sourced business review app highlighting local minority owned businesses in the Austin area. Implemented the use of Yelp s API to achieve backend data with full CRUD functionality and deployed app using AWS.",
-    image: "/images/1.png",
-    tags: ["React", "CSS", "MongoDB", "Node"],
-    source: "https://main.d32hto66cg6s2c.amplifyapp.com",
-    visit: "https://github.com/ACCSoftwareBootcamp/insights",
+      "Made using React with Firebase serving as a backend. Fully loaded with the ability to upload, comment, sign-up and sign-in, it's everything you love about Instagram without legally being Instagram!  ",
+    image: "/images/instaclone.png",
+    tags: ["React", "styled-components", "Firebase", "CSS"],
+    source: "https://instagram-clone-react-7e7e3.web.app/",
+    visit: "https://github.com/btims512/instagram-clone",
     id: 0,
   },
   {
     title: "Chatthew",
     description:
       "Developed chat app platform integrating the use of WebSockets. Complete with account sign-in landing page then dashboard displaying chatrooms. Implemented the use of styled-components and ant-design for styling. Launched app using Netlify.",
-    image: "/images/2.png",
+    image: "/images/chatthew.png",
     tags: ["React", "JavaScript", "ChatEngine.io"],
     source: "https://chatthew.netlify.app/",
     visit: "https://github.com/btims512/Chat-App",
     id: 1,
-  },
-  {
-    title: "Find Dat Gif!",
-    description:
-      "A fun app to find the perfect GIF for how you're feeling including a trending home page and random section if you're not unsure. Developed using Express and consuming Giphy's API via Node-Fetch.",
-    image: "/images/3.jpg",
-    tags: ["JavaScript", "EJS", "Node-Fetch,", "CSS"],
-    source: "https://finddatgif.herokuapp.com/",
-    visit: "https://github.com/btims512/projects",
-    id: 2,
   },
   {
     title: 'Exchange Rates "R" Us',
@@ -38,6 +28,26 @@ export const projects = [
     source: "https://exchangeratesrus.netlify.app/",
     visit: "https://github.com/btims512/exchangeRate",
     id: 3,
+  },
+  {
+    title: "Insights",
+    description:
+      "Led front-end development in crowd-sourced business review app highlighting local minority owned businesses in the Austin area. Implemented the use of Yelp s API to achieve backend data with full CRUD functionality and deployed app using AWS.",
+    image: "/images/insights.png",
+    tags: ["React", "CSS", "MongoDB", "Node"],
+    source: "https://main.d32hto66cg6s2c.amplifyapp.com",
+    visit: "https://github.com/ACCSoftwareBootcamp/insights",
+    id: 0,
+  },
+  {
+    title: "Find Dat Gif!",
+    description:
+      "A fun app to find the perfect GIF for how you're feeling including a trending home page and random section if you're not unsure. Developed using Express and consuming Giphy's API via Node-Fetch.",
+    image: "/images/FDG.jpg",
+    tags: ["JavaScript", "EJS", "Node-Fetch,", "CSS"],
+    source: "https://finddatgif.herokuapp.com/",
+    visit: "https://github.com/btims512/projects",
+    id: 2,
   },
 ];
 
