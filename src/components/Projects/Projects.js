@@ -1,4 +1,6 @@
 import React from "react";
+import Roll from "react-reveal/Roll";
+import Slide from "react-reveal/Slide";
 
 import {
   BlogCard,
@@ -42,30 +44,34 @@ const projectsDemo = [
 const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
-    <SectionTitle main>Projects</SectionTitle>
+    <Roll left>
+      <SectionTitle main>Projects</SectionTitle>
+    </Roll>
     <GridContainer>
       {projects.map(
         ({ id, image, title, description, tags, source, visit }) => (
-          <BlogCard key={id}>
-            <Img src={image} />
-            <TitleContent>
-              <HeaderThree title>{title}</HeaderThree>
-              <Hr />
-            </TitleContent>
-            <CardInfo>{description}</CardInfo>
-            <div>
-              <TitleContent>Stack</TitleContent>
-              <TagList>
-                {tags.map((tag, i) => (
-                  <Tag key={i}>{tag}</Tag>
-                ))}
-              </TagList>
-            </div>
-            <UtilityList>
-              <ExternalLinks href={visit}>Code</ExternalLinks>
-              <ExternalLinks href={source}>Visit</ExternalLinks>
-            </UtilityList>
-          </BlogCard>
+          <Slide left>
+            <BlogCard key={id}>
+              <Img src={image} />
+              <TitleContent>
+                <HeaderThree title>{title}</HeaderThree>
+                <Hr />
+              </TitleContent>
+              <CardInfo>{description}</CardInfo>
+              <div>
+                <TitleContent>Stack</TitleContent>
+                <TagList>
+                  {tags.map((tag, i) => (
+                    <Tag key={i}>{tag}</Tag>
+                  ))}
+                </TagList>
+              </div>
+              <UtilityList>
+                <ExternalLinks href={visit}>Code</ExternalLinks>
+                <ExternalLinks href={source}>Visit</ExternalLinks>
+              </UtilityList>
+            </BlogCard>
+          </Slide>
         )
       )}
     </GridContainer>

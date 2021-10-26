@@ -1,4 +1,6 @@
 import React from "react";
+import Flip from "react-reveal/Flip";
+import Zoom from "react-reveal/Zoom";
 
 import {
   Section,
@@ -7,24 +9,35 @@ import {
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection } from "./HeroStyles";
+import AboutText from "../About/HeroText";
 
 const Hero = (props) => (
   <Section row nopadding>
     <LeftSection>
-      <SectionTitle main center>
-        {" "}
-        <br />
-        Benjamin Tims
-      </SectionTitle>
-      <SectionText>Full Stack Software Engineer</SectionText>
-      <Button
-        onClick={() =>
-          window.open("https://benjamintimsresume.netlify.app/", "_blank")
-        }
-      >
-        {" "}
-        View Resume{" "}
-      </Button>
+      <Flip left>
+        <SectionTitle main center>
+          {" "}
+          {/* <br /> */}
+          Benjamin Tims
+        </SectionTitle>
+        <SectionText />
+      </Flip>
+      <AboutText />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Zoom clear>
+        <Button
+          onClick={() =>
+            window.open("https://benjamintimsresume.netlify.app/", "_blank")
+          }
+        >
+          View Resume{" "}
+        </Button>
+      </Zoom>
     </LeftSection>
   </Section>
 );

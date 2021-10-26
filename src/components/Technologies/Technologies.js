@@ -13,47 +13,52 @@ import {
   ListParagraph,
   ListTitle,
 } from "./TechnologiesStyles";
+import Zoom from "react-reveal/Zoom";
 
 const Technologies = () => (
-  <Section id="tech">
-    <SectionDivider />
-    <br />
-    <SectionTitle>Technologies</SectionTitle>
-    <List>
-      <ListItem>
-        <DiReact size="4rem" />
-        <ListContainer>
-          <ListTitle>Front-End</ListTitle>
-          <ListParagraph>
-            Experience with React, Javascript, <br />
-            HTML and CSS
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <DiFirebase size="3rem" />
-        <ListContainer>
-          <ListTitle>Back-End</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            Node.js and Databases <br />
-            such as MongoDB and SQL
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <DiNodejsSmall size="3rem" />
-        <ListContainer>
-          <ListTitle>Frameworks & Libraries</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            Bootstrap, Express.js, <br />
-            React.js and EJS
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-    </List>
-    {
+  <Zoom>
+    <Section id="tech">
+      <SectionDivider />
+      <br />
+      <SectionTitle>Technologies</SectionTitle>
+      <List>
+        <ListItem>
+          <DiReact size="4rem" />
+          <ListContainer>
+            <ListTitle>Front-End</ListTitle>
+            <ListParagraph>
+              Experience with React, Javascript, <br />
+              HTML and CSS
+            </ListParagraph>
+          </ListContainer>
+        </ListItem>
+        <ListItem>
+          <DiFirebase size="3rem" />
+          <ListContainer>
+            <ListTitle>Back-End</ListTitle>
+            <ListParagraph>
+              Experience with <br />
+              Node.js and Databases <br />
+              such as MongoDB and SQL
+            </ListParagraph>
+          </ListContainer>
+        </ListItem>
+        <ListItem>
+          <DiNodejsSmall size="3rem" />
+          <ListContainer>
+            <ListTitle>Frameworks & Libraries</ListTitle>
+            <ListParagraph>
+              Experience with <br />
+              Bootstrap, Express.js, <br />
+              React.js and EJS
+            </ListParagraph>
+          </ListContainer>
+        </ListItem>
+      </List>
+    </Section>
+  </Zoom>
+
+  /* {
        <SectionText>
       <List>
         <img
@@ -177,8 +182,7 @@ const Technologies = () => (
           }}
         />{" "}
       </List>
-    </SectionText> }
-  </Section>
+    </SectionText> } */
 );
 
 export default Technologies;
