@@ -75,7 +75,12 @@ const Timeline = () => {
           className="aboutme"
           className="profilePic"
           src="../images/profile.png"
-          style={{ width: "300px", maxWidth: "100%", height: "auto" }}
+          style={{
+            width: "300px",
+            maxWidth: "100%",
+            height: "auto",
+            border: "5px solid gray",
+          }}
         />{" "}
         <SectionText style={{ fontSize: "18px", padding: "10px" }}>
           {" "}
