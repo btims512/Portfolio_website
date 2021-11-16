@@ -10,6 +10,16 @@ export const projects = [
     id: 0,
   },
   {
+    title: "Seussibles",
+    description:
+      "A website designed for the selling and trading of the official Dr. Seuss NFT collectibles by Tibles Inc partnered with with Dapper Labs. Made using basic HTML and CSS. Fit to be responsive for all devices via the use of media queries.",
+    image: "/images/seussibles.png",
+    tags: ["HTML", "CSS"],
+    source: "https://seussibles.netlify.app/",
+    visit: "https://github.com/btims512/seussibles",
+    id: 2,
+  },
+  {
     title: "OneShots",
     description:
       "A simple landing page designed for Tibles Inc to showcase their new NFT private beta. Developed using vanilla Javascript, HTML and CSS and designed to be 100% dynamic via the use of media queries",
@@ -62,19 +72,28 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2014, text: "Started my journey at Apple in Technical support." },
+  {
+    year: 2014,
+    text: "Started my journey at Apple in Technical support.",
+  },
   {
     year: 2014,
     text:
       "Hired with the on-site mentoring team at Apple located in Austin, TX.",
   },
-  { year: 2016, text: "Joined the AppleCare Training Team at Apple." },
+  {
+    year: 2016,
+    text: "Joined the AppleCare Training Team at Apple.",
+  },
   {
     year: 2019,
     text:
       "Started pursuing my interest in web devolvement via online courses and self-help resources.",
   },
-  { year: 2020, text: "Enrolled in software engineering bootcamp." },
+  {
+    year: 2020,
+    text: "Enrolled in software engineering bootcamp.",
+  },
   {
     year: 2021,
     text:
@@ -83,7 +102,16 @@ export const TimeLineData = [
 ];
 
 export const data = [
-  { number: 8, text: "Years with Apple" },
-  { number: 240, text: "Hours of class time" },
-  { number: 25, text: "Projects in Github" },
+  {
+    number: 8,
+    text: "Years with Apple",
+  },
+  {
+    number: 240,
+    text: "Hours of class time",
+  },
+  {
+    number: 25,
+    text: "Projects in Github",
+  },
 ];

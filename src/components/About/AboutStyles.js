@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutStyles = styled.div`
+export const AboutStyles = styled.div `
   .grow img {
     transition: 0.8s ease;
   }

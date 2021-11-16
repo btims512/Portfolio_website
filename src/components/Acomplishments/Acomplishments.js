@@ -15,8 +15,8 @@ const Accomplishments = () => (
     <Flip bottom>
       <SectionTitle>Personal Accomplishments</SectionTitle>
       <img
-        src="../images/acc_ certification.png"
-        style={{ width: "775px", maxWidth: "100%", height: "auto" }}
+        src="../images/acc_border_certificate.png"
+        style={{ width: "775px", maxWidth: "100%", height: "auto", boxShadow: "26px 21px 20px rgba(80, 78, 78, 0.5)", borderRadius: "10px" }}
       />{" "}
     </Flip>
     <Bounce left>

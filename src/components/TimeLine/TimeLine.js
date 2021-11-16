@@ -79,7 +79,8 @@ const Timeline = () => {
             width: "300px",
             maxWidth: "100%",
             height: "auto",
-            border: "5px solid gray",
+            boxShadow: "16px 12px 16px rgba(80, 78, 78, 0.5)",
+            borderRadius: "10px",
           }}
         />{" "}
         <SectionText style={{ fontSize: "18px", padding: "10px" }}>
