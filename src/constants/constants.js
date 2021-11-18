@@ -15,7 +15,7 @@ export const projects = [
       "A website designed for the selling and trading of the official Dr. Seuss NFT collectibles by Tibles Inc partnered with with Dapper Labs. Made using basic HTML and CSS. Fit to be responsive for all devices via the use of media queries.",
     image: "/images/seussibles.png",
     tags: ["HTML", "CSS"],
-    source: "https://seussibles.netlify.app/",
+    source: "",
     visit: "https://github.com/btims512/seussibles",
     id: 2,
   },
