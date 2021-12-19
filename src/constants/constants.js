@@ -1,21 +1,11 @@
 export const projects = [
   {
-    title: "Instagram Clone",
-    description:
-      "Made using React with Firebase serving as a backend. Fully loaded with the ability to upload, comment, sign-up and sign-in, it's everything you love about Instagram without legally being Instagram!  ",
-    image: "/images/instagramclone.png",
-    tags: ["React", "Firebase", "CSS", "styled-components"],
-    source: "https://instagram-clone-react-7e7e3.web.app/",
-    visit: "https://github.com/btims512/instagram-clone",
-    id: 0,
-  },
-  {
-    title: "Seussibles",
+    title: "Seussibles!",
     description:
       "A website designed for the selling and trading of the official Dr. Seuss NFT collectibles by Tibles Inc partnered with with Dapper Labs. Made using basic HTML and CSS. Fit to be responsive for all devices via the use of media queries.",
     image: "/images/seussibles.png",
     tags: ["HTML", "CSS"],
-    source: "",
+    source: "https://seussibles.com",
     visit: "https://github.com/btims512/seussibles",
     id: 2,
   },
@@ -28,6 +18,16 @@ export const projects = [
     source: "https://oneshots.com",
     visit: "https://github.com/btims512/oneshots_landing_page",
     id: 2,
+  },
+  {
+    title: "Instagram Clone",
+    description:
+      "Made using React with Firebase serving as a backend. Fully loaded with the ability to upload, comment, sign-up and sign-in, it's everything you love about Instagram without legally being Instagram!  ",
+    image: "/images/instagramclone.png",
+    tags: ["React", "Firebase", "CSS", "styled-components"],
+    source: "https://instagram-clone-react-7e7e3.web.app/",
+    visit: "https://github.com/btims512/instagram-clone",
+    id: 0,
   },
   {
     title: 'Exchange Rates "R" Us',
