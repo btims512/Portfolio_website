@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: "Vinyl Reckoning",
+    description:
+      "A fun website designed for a podcast that discusses vinyl records mainly from the 2000's pop-punk era. Developed using react with styled-components and optimized with the 'mobile first' mentality.",
+    image: "/images/vinyl_reck.png",
+    tags: ["React", "JSX", "CSS", "Styled-components"],
+    source: "https://vinylreckoning.netlify.app/",
+    visit: "https://github.com/btims512/vinyl_reckoning",
+    id: 2,
+  },
+  {
     title: "Seussibles!",
     description:
       "A website designed for the selling and trading of the official Dr. Seuss NFT collectibles by Tibles Inc partnered with with Dapper Labs. Made using basic HTML and CSS. Fit to be responsive for all devices via the use of media queries.",
@@ -78,8 +88,7 @@ export const TimeLineData = [
   },
   {
     year: 2014,
-    text:
-      "Hired with the on-site mentoring team at Apple located in Austin, TX.",
+    text: "Hired with the on-site mentoring team at Apple located in Austin, TX.",
   },
   {
     year: 2016,
@@ -87,8 +96,7 @@ export const TimeLineData = [
   },
   {
     year: 2019,
-    text:
-      "Started pursuing my interest in web devolvement via online courses and self-help resources.",
+    text: "Started pursuing my interest in web devolvement via online courses and self-help resources.",
   },
   {
     year: 2020,
@@ -96,8 +104,7 @@ export const TimeLineData = [
   },
   {
     year: 2021,
-    text:
-      "Finished bootcamp and continue work on personal, and open sourced projects.",
+    text: "Finished bootcamp and continue work on personal, and open sourced projects.",
   },
 ];
 
