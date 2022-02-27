@@ -16,8 +16,6 @@ const Hero = (props) => (
     <LeftSection>
       <Flip left>
         <SectionTitle main center>
-          {" "}
-          {/* <br /> */}
           Benjamin Tims
         </SectionTitle>
         <SectionText />

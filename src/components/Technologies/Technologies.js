@@ -1,9 +1,8 @@
 import React from "react";
-import { DiFirebase, DiReact, DiZend, DiNodejsSmall } from "react-icons/di";
+import { DiFirebase, DiReact, DiNodejsSmall } from "react-icons/di";
 import {
   Section,
   SectionDivider,
-  SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import {
@@ -14,7 +13,6 @@ import {
   ListTitle,
 } from "./TechnologiesStyles";
 import Zoom from "react-reveal/Zoom";
-import TechList from "../TechList/TechList";
 import Bounce from "react-reveal/Bounce";
 
 const Technologies = () => (
@@ -29,7 +27,7 @@ const Technologies = () => (
           <ListContainer>
             <ListTitle>Front-End</ListTitle>
             <ListParagraph>
-              React, Javascript, <br />
+              React, Javascript, Dart, <br />
               HTML & CSS
             </ListParagraph>
           </ListContainer>
@@ -40,7 +38,7 @@ const Technologies = () => (
             <ListTitle>Back-End</ListTitle>
             <ListParagraph>
               <br />
-              Node.js and Databases <br />
+              Firebase, Node.js and Databases <br />
               such as MongoDB, SQL & NoSQL
             </ListParagraph>
           </ListContainer>
@@ -51,7 +49,7 @@ const Technologies = () => (
             <ListTitle>Frameworks & Libraries</ListTitle>
             <ListParagraph>
               <br />
-              React.js, Next.js, EJS Bootstrap & Express.js <br />
+              React.js, Flutter, Next.js, EJS Bootstrap & Express.js <br />
             </ListParagraph>
           </ListContainer>
         </ListItem>

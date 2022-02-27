@@ -1,7 +1,5 @@
 import { AboutTextStyles } from "./AboutTextStyles";
 
-// function([string1, string2],target id,[color1,color2])
-
 const AboutText = () => {
   return (
     <AboutTextStyles>
