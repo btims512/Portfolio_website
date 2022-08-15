@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: "Tibles",
+    description:
+      "With building digital collectibles since 2012 for brands like Star Wars, Disney, NFL and many more, Tibles Inc has more experience making officially-licensed digital collectibles for top brands than anyone in the business. Developed using HTML, CSS and JavaScript.",
+    image: "/images/tibles.png",
+    tags: ["HTML", "CSS", "Javascript"],
+    source: "https://www.tibles.com/",
+    visit: "https://github.com/btims512/seussibles",
+    id: 2,
+  },
+  {
     title: "Vinyl Reckoning",
     description:
       "A fun website designed for a podcast that discusses vinyl records mainly from the 2000's pop-punk era. Developed using react with styled-components and optimized with the 'mobile first' mentality.",
