@@ -107,7 +107,7 @@ export const Tag = styled.li`
 `;
 
 // Timeline styles //
-export const Timeline = styled.li`
+export const Timeline = styled.tbody`
   * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -182,7 +182,7 @@ export const Timeline = styled.li`
     border-radius: 50%;
     border: 2px solid #f5f7fa;
     background: #4fc1e9;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     z-index: 9999;
   }
 
