@@ -30,7 +30,7 @@ import {
 import { experience, TimeLineData } from "../../constants/constants";
 
 
-const TOTAL_CAROUSEL_COUNT = experience.length;
+const TOTAL_TIMELINE_COUNT = experience.length;
 
 const Experience = () => {
   const [activeItem, setActiveItem] = useState(0);
@@ -98,61 +98,63 @@ const Experience = () => {
     ))
       } */}
 
-
-
       {experience.map((item, index) => {
           return (
-            <Timeline key={index}
-                final={index === TOTAL_CAROUSEL_COUNT - 1}>
-<div class="container">
-<div class="timeline-block timeline-block-right">
+            <Timeline final={index === TOTAL_TIMELINE_COUNT - 1}
+              key={index}
+              index={index}
+              active={activeItem}
+              onClick={(e) => handleClick(e, index)}
+              type="button"
+            >
+            <Timeline final={index === TOTAL_TIMELINE_COUNT - 1}
+              key={index}
+              index={index}
+              active={activeItem}
+              onClick={(e) => handleClick(e, index)}
+              type="button">
+
+                <div className="container" >
+      
+    <div class={`${item.side}`}>
   <div class="marker"></div>
     <div class="timeline-content">
       <h3>{`${item.year}`}</h3>
-      <span>Some work experience</span>
+      <span>{`${item.company}`}</span>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
     </div>
 </div>
 
-<div class="timeline-block timeline-block-left">
-  <div class="marker"></div>
-    <div class="timeline-content">
-      <h3>{`${item.year}`}</h3>
-      <span>Some work experience</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
     </div>
-</div>
-{/* 
-   <div class="timeline-block timeline-block-right">
-      <div class="marker"></div>
-      <div class="timeline-content">
-         <h3>Third Year</h3>
-         <span>Some work experience</span>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-      </div>
-   </div>
-
-   <div class="timeline-block timeline-block-left">
-      <div class="marker"></div>
-      <div class="timeline-content">
-         <h3>Fourth Year</h3>
-         <span>Some work experience</span>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-      </div>
-   </div>
-
-   <div class="timeline-block timeline-block-right">
-      <div class="marker"></div>
-      <div class="timeline-content">
-         <h3>Fifth Year</h3>
-         <span>Some work experience</span>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-      </div>
-   </div> */}
-</div>
-    </Timeline>
+            </Timeline>
+              {/* <CarouselButtonDot active={activeItem} /> */}
+            </Timeline>
           );
         })}
+
+{/* {experience.map((item, index) => {
+  <Timeline key={index}
+    final={index === TOTAL_CAROUSEL_COUNT - 1}>
+
+    <div className="container">
+
+    <div class="timeline-block timeline-block-right">
+  <div class="marker"></div>
+    <div class="timeline-content">
+      <h3>{`${item.year}`}</h3>
+      <span>Some work experience</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+    </div>
+</div>
+
+    </div>
+
+
+    
+  </Timeline>
+})} */}
+      
+
     
     </Section>
   );

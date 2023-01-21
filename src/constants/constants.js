@@ -98,15 +98,25 @@ export const experience = [
     year: "2022",
     responsibilities:
       "Develop and maintain accessible, responsive, functional and rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks.",
+      side: "timeline-block timeline-block-right"
   },
 
-  // {
-  //   title: "Web Developer Consultant",
-  //   company: "Tibles",
-  //   year: "2021",
-  //   responsibilities:
-  //     "Develop and maintain accessible, responsive, functional and rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks.",
-  // },
+  {
+    title: "Web Developer Consultant",
+    company: "Tibles",
+    year: "2021",
+    responsibilities:
+      "Develop and maintain accessible, responsive, functional and rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks.",
+      side: "timeline-block timeline-block-left"
+  },
+  {
+    title: "Web Developer Consultant",
+    company: "Apple",
+    year: "2014",
+    responsibilities:
+      "Develop and maintain accessible, responsive, functional and rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks.",
+      side: "timeline-block timeline-block-right"
+  },
 ];
 
 export const TimeLineData = [
