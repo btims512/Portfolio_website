@@ -91,6 +91,24 @@ export const projects = [
   },
 ];
 
+export const experience = [
+  {
+    title: "Web Developer",
+    company: "Apple",
+    year: "2022",
+    responsibilities:
+      "Develop and maintain accessible, responsive, functional and rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks.",
+  },
+
+  // {
+  //   title: "Web Developer Consultant",
+  //   company: "Tibles",
+  //   year: "2021",
+  //   responsibilities:
+  //     "Develop and maintain accessible, responsive, functional and rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks.",
+  // },
+];
+
 export const TimeLineData = [
   {
     year: 2014,
@@ -115,6 +133,14 @@ export const TimeLineData = [
   {
     year: 2021,
     text: "Finished bootcamp and continue work on personal, and open sourced projects.",
+  },
+  {
+    year: 2021,
+    text: "Started freelancing and working with NYC based NFT company Tibles.",
+  },
+  {
+    year: 2022,
+    text: "Started role at Apple as Front End Web Developer.",
   },
 ];
 

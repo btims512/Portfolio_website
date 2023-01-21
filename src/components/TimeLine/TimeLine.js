@@ -73,7 +73,7 @@ const Timeline = () => {
         {/* <About /> */}
         <img
           className="aboutme"
-          className="profilePic"
+          id="profilePic"
           src="../images/profile.png"
           style={{
             width: "300px",

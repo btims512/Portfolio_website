@@ -37,7 +37,6 @@ const Technologies = () => (
           <ListContainer>
             <ListTitle>Back-End</ListTitle>
             <ListParagraph>
-              <br />
               Firebase, Node.js and Databases <br />
               such as MongoDB, SQL & NoSQL
             </ListParagraph>
@@ -48,7 +47,6 @@ const Technologies = () => (
           <ListContainer>
             <ListTitle>Frameworks & Libraries</ListTitle>
             <ListParagraph>
-              <br />
               React.js, Flutter, Next.js, EJS Bootstrap & Express.js <br />
             </ListParagraph>
           </ListContainer>
