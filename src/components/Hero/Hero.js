@@ -24,9 +24,6 @@ const Hero = (props) => (
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
       <Zoom clear>
         <Button
           onClick={() =>

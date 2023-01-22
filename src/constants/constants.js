@@ -96,26 +96,44 @@ export const experience = [
     title: "Web Developer",
     company: "Apple",
     year: "2022",
-    responsibilities:
-      "Develop and maintain accessible, responsive, functional and rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks.",
-      side: "timeline-block timeline-block-right"
+    responsibilities: [
+      "Develop and maintain accessible, responsive, functional and rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks",
+      "Responsible for managing internal recruiting projects, communication, training, and developing websites for Apple recruiting and beyond",
+      "Build and publish carefully crafted web pages using front-end technologies, including HTML5, CSS3, and JavaScript often via the use of Drupal",
+      "Refactored components of RecruitingWeb to align more with Apple and Apple’s accessibility standards",
+      "Member of the Frontend Mentoring Program at Apple.",
+      "Worked closely with content managers in the development and launch of Apple’s intern site for 2022",
+    ],
+    side: "timeline-block timeline-block-right",
   },
 
   {
     title: "Web Developer Consultant",
     company: "Tibles",
     year: "2021",
-    responsibilities:
-      "Develop and maintain accessible, responsive, functional and rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks.",
-      side: "timeline-block timeline-block-left"
+    responsibilities: [
+      "Develop and maintain accessible, responsive, functional and rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks",
+      "Built websites designed for Tibles Inc for the selling and trading of the official Dr. Seuss and OneShots NFT collectibles.",
+      "Fully developed and co-designed company's websites via the use of Figma, HTML and CSS and leveraged the use of heavy communication with the Tibles design team as well as occasionally attending their meetings to ensure assets were kept up-to-date and met company compliance standards",
+      "Involving heavy communication with the Tibles design team to ensure assets were kept up-to-date and met company compliance",
+      "Developed all apps using JavaScript, HTML and CSS. Designed to be responsive for all device sizes by implementing the use of media queries",
+      "Developed landing page for Tibles Inc to showcase their new NFT private beta 'OneShots'",
+    ],
+    side: "timeline-block timeline-block-left",
   },
   {
     title: "Web Developer Consultant",
     company: "Apple",
     year: "2014",
-    responsibilities:
-      "Develop and maintain accessible, responsive, functional and rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks.",
-      side: "timeline-block timeline-block-right"
+    responsibilities: [
+      "Develop and maintain accessible, responsive, functional and rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks",
+      "Led onboarding academy classes for both technical and non-technical new-hire Apple employees",
+      " Specialized in delivering technical training courses for employees transitioning into technical roles within the company. An example of such tech would be instructing macOS courses, which often involved working closely with terminal and sudo commands",
+      "Implemented training content for technical modules to improve the classroom learning environment and improved final scores by 12.6%.",
+      "Instructed courses on internal tools used globally within the company in both in-person and virtual environment settings",
+      "Gathered and provided log files to engineering support for issues requiring further analyzation",
+    ],
+    side: "timeline-block timeline-block-right",
   },
 ];
 
