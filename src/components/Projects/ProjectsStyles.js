@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Img = styled.img`
+  display: none;
   width: 100%;
   height: 100%;
   border-top-left-radius: 10px;
@@ -28,6 +29,7 @@ export const BlogCard = styled.div`
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 400px;
+  height: 400px;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }

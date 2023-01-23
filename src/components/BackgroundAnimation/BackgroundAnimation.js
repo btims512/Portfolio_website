@@ -1,10 +1,23 @@
 import React from "react";
 import Zoom from "react-reveal/Zoom";
+import {
+  ProfilePicStyles,
+  BackgroundAnimationStyles,
+} from "./BackgroundAnimationStyles";
 
 const BackgroundAnimation = () => (
   <Zoom>
     <div>
+      <div>
+        {/* profilePic */}
+        <ProfilePicStyles>
+          <div>
+            <img id="header-profile-pic" src="../images/profile.png" />
+          </div>{" "}
+        </ProfilePicStyles>
+      </div>
       <svg
+        style={{ margin: "-130px -16px 110px 97px" }}
         className="BgAnimation__svg"
         viewBox="0 0 602 602"
         fill="none"
@@ -12,6 +25,7 @@ const BackgroundAnimation = () => (
       >
         <g opacity="0.15">
           <path
+            margin="-130px -16px 110px 97px"
             fillRule="evenodd"
             clipRule="evenodd"
             d="M201.337 87.437C193.474 79.5738 180.725 79.5738 172.862 87.437L87.437 172.862C79.5739 180.725 79.5739 193.474 87.437 201.337L400.663 514.563C408.526 522.426 421.275 522.426 429.138 514.563L514.563 429.138C522.426 421.275 522.426 408.526 514.563 400.663L201.337 87.437ZM30.4869 115.912C-8.82897 155.228 -8.82897 218.972 30.4869 258.287L343.713 571.513C383.028 610.829 446.772 610.829 486.088 571.513L571.513 486.088C610.829 446.772 610.829 383.028 571.513 343.713L258.287 30.4869C218.972 -8.82896 155.228 -8.82896 115.912 30.4869L30.4869 115.912Z"
@@ -19,6 +33,7 @@ const BackgroundAnimation = () => (
             id="path_0"
           />
           <path
+            margin="-130px -16px 110px 97px"
             d="M514.563 201.337C522.426 193.474 522.426 180.725 514.563 172.862L429.138 87.437C421.275 79.5738 408.526 79.5739 400.663 87.437L358.098 130.002L301.148 73.0516L343.713 30.4869C383.028 -8.82896 446.772 -8.82896 486.088 30.4869L571.513 115.912C610.829 155.228 610.829 218.972 571.513 258.287L357.802 471.999L300.852 415.049L514.563 201.337Z"
             stroke="url(#paint1_radial)"
             id="path_1"
@@ -87,7 +102,7 @@ const BackgroundAnimation = () => (
           rx="1.07433"
           ry="1.07306"
           transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)"
-          fill="#945DD6"
+          fill="#00DBD8"
         >
           <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
             <mpath xlinkHref="#path_0" />
@@ -108,7 +123,7 @@ const BackgroundAnimation = () => (
           rx="1.07433"
           ry="1.07306"
           transform="translate(-382.164 -155.029) rotate(90 382.164 155.029)"
-          fill="#F46737"
+          fill="#13ADC7"
         >
           <animateMotion
             dur="10s"
@@ -139,7 +154,7 @@ const BackgroundAnimation = () => (
           rx="1.07306"
           ry="1.07433"
           transform="translate(-333.324 -382.691) rotate(-180 333.324 382.691)"
-          fill="#F46737"
+          fill="#B133FF"
         >
           <animateMotion
             dur="5s"
@@ -170,7 +185,7 @@ const BackgroundAnimation = () => (
           rx="1.07306"
           ry="1.07433"
           transform="translate(-165.524 -93.9596)"
-          fill="#F46737"
+          fill="#945DD6"
         >
           <animateMotion
             dur="10s"
@@ -290,8 +305,8 @@ const BackgroundAnimation = () => (
             y2="129.989"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#F46737" />
-            <stop offset="1" stopColor="#F46737" stopOpacity="0" />
+            <stop stopColor="#00DBD8" />
+            <stop offset="1" stopColor="#00DBD8" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint6_linear"
@@ -301,8 +316,8 @@ const BackgroundAnimation = () => (
             y2="357.655"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#F46737" />
-            <stop offset="1" stopColor="#F46737" stopOpacity="0" />
+            <stop stopColor="#B133FF" />
+            <stop offset="1" stopColor="#B133FF" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint7_linear"
@@ -312,8 +327,8 @@ const BackgroundAnimation = () => (
             y2="118.996"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#F46737" />
-            <stop offset="1" stopColor="#F46737" stopOpacity="0" />
+            <stop stopColor="#13ADC7" />
+            <stop offset="1" stopColor="#13ADC7" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint8_linear"
@@ -323,8 +338,8 @@ const BackgroundAnimation = () => (
             y2="276.118"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#13ADC7" />
-            <stop offset="1" stopColor="#13ADC7" stopOpacity="0" />
+            <stop stopColor="#B133FF" />
+            <stop offset="1" stopColor="#B133FF" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint9_linear"

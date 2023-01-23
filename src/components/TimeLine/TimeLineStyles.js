@@ -91,11 +91,11 @@ export const BoxText = styled.div`
     height: calc(100% + 4px * 2);
     background-image: linear-gradient(
       90deg,
-      #4edcb7,
-      #83ea9e,
+      #13adc7,
+      #00dbd8,
+      #945dd6,
       #32b9cd,
-      #32b9cd,
-      #4edcb7
+      #b133ff
     );
     background-size: 300% 200%;
     -webkit-animation: spining 3s linear infinite alternate;

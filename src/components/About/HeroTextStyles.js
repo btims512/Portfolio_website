@@ -27,6 +27,7 @@ export const HeroTextStyles = styled.div`
     margin: 10 auto;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
     font-size: 140%;
+    color: hsl(204deg 24% 94% / 50%);
     white-space: nowrap;
 
     overflow: hidden;
@@ -38,7 +39,7 @@ export const HeroTextStyles = styled.div`
     /* flex-shrink: 1; */
     width: fit-content;
     animation: typewriter 4s steps(44) 1s 1 normal both,
-      blinkTextCursor 500ms steps(44) infinite normal;
+      blinkTextCursor 800ms steps(44) infinite normal;
   }
   @keyframes typewriter {
     from {

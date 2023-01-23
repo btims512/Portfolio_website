@@ -30,7 +30,7 @@ const Hero = (props) => (
             window.open("https://benjamintimsresume.netlify.app/", "_blank")
           }
         >
-          View Resume{" "}
+          Download Resume{" "}
         </Button>
       </Zoom>
     </LeftSection>
