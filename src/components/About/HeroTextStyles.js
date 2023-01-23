@@ -26,10 +26,9 @@ export const HeroTextStyles = styled.div`
     max-width: 100vw;
     margin: 10 auto;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
-    font-size: 140%;
+    font-size: 120%;
     color: hsl(204deg 24% 94% / 50%);
     white-space: nowrap;
-
     overflow: hidden;
     transform: translateY(-50%);
   }

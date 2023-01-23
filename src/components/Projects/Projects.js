@@ -14,11 +14,13 @@ import {
   TitleContent,
   UtilityList,
   Img,
+  StackTitle
 } from "./ProjectsStyles";
 import {
   Section,
   SectionDivider,
   SectionTitle,
+  ProjectSectionTitle
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 
@@ -26,25 +28,26 @@ const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
     <Roll left>
-      <SectionTitle main>Projects</SectionTitle>
+      <ProjectSectionTitle main>Projects</ProjectSectionTitle>
     </Roll>
     <GridContainer>
       {projects.map(
         ({ id, image, title, description, tags, source, visit }) => (
           <Slide left>
             <BlogCard key={id}>
-              <Img src={image} />
               <TitleContent>
-                <HeaderThree title>{title}</HeaderThree>
+                <HeaderThree title>
+              <Img src={image} />
+                {title}</HeaderThree>
                 <Hr />
               </TitleContent>
               <CardInfo>{description}</CardInfo>
               <div>
                 <br />
-                <TitleContent>Stack</TitleContent>
                 <TagList>
+                <StackTitle>Stack: &nbsp; &nbsp;</StackTitle>
                   {tags.map((tag, i) => (
-                    <Tag key={i}>{tag}</Tag>
+                    <Tag key={i}>{tag} &nbsp;</Tag>
                   ))}
                 </TagList>
               </div>

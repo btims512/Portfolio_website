@@ -36,14 +36,20 @@ export const Div2 = styled.div`
   justify-content: space-around;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 6;
-    margin-right: 46px;
+    margin: -12px 9px 1px -52px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    grid-area: 2 / 1 / 3 / 6;
+    margin: -12px 9px 1px -11px;
   }
 `;
 export const Div3 = styled.div`
-  grid-area: 1 / 6;
+  grid-area: 1 / 8;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 10px;
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
     grid-area: 1 / 4 / 2 / 6;
@@ -63,6 +69,7 @@ export const NavLink = styled.a`
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.5rem;
+    font-size: 16px;
   }
 `;
 
@@ -73,7 +80,6 @@ export const ContactDropDown = styled.button`
   position: relative;
   background: none;
   font-size: 1.7rem;
-
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);
   cursor: pointer;

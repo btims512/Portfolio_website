@@ -1,35 +1,36 @@
 import styled from "styled-components";
 
 export const Img = styled.img`
-  display: none;
-  width: 100%;
-  height: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  object-fit: cover;
+  width: 80px;
+  object-fit: contain;
   overflow: hidden;
 `;
 
 export const GridContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  padding: 3rem;
+  /* padding: 3rem; */
   place-items: center;
-  column-gap: 2rem;
-  row-gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 20px;
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     flex-direction: column;
     padding: 2rem;
     padding-bottom: 0;
+    align-self: center;
   }
 `;
 export const BlogCard = styled.div`
-  border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  border-radius: 24px;
+  background-color: #212d45;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
   text-align: center;
   width: 400px;
   height: 400px;
+  align-self: baseline;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
@@ -40,20 +41,45 @@ export const TitleContent = styled.div`
   width: 100%;
 `;
 
+export const StackTitle = styled.div`
+  color: #e4e6e7;
+  opacity: 0.5;
+  font-size: 16px;
+`;
+
 export const HeaderThree = styled.h3`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: center;
+  justify-items: left;
   font-weight: 500;
   letter-spacing: 2px;
-  color: #9cc9e3;
+  color: #00dbd8;
   padding: 0.5rem 0;
-  font-size: ${(props) => (props.title ? "3rem" : "2rem")};
+  padding: 30px 200px 0px 36px;
+  gap: 12px;
+  margin-bottom: -16px;
+  font-size: ${(props) => (props.title ? "24px" : "2rem")};
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: flex;
+    flex-direction: column;
+    padding: 11px 49px 0px 40px;
+    padding-bottom: 0;
+    align-self: center;
+    gap: 0px;
+  }
 `;
 
 export const Hr = styled.hr`
   width: 50px;
   height: 3px;
-  margin: 20px auto;
+  margin: 10px auto;
   border: 0;
-  background: #d0bb57;
+  /* background: #d0bb57; */
 `;
 
 export const Intro = styled.div`
@@ -71,8 +97,9 @@ export const CardInfo = styled.p`
   padding: 0 50px;
   color: #e4e6e7;
   font-style: 2rem;
-  line-height: 24px;
+  line-height: 18px;
   text-align: justify;
+  font-size: 12px;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.3rem;
   }
@@ -100,10 +127,15 @@ export const ExternalLinks = styled.a`
 
 export const TagList = styled.ul`
   display: flex;
-  justify-content: space-around;
-  padding: 2rem;
+  /* justify-content: space-around; */
+  padding: 1rem 0px 0px 52px;
+  align-items: center;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 1rem 0px 0px 23px;
+  }
 `;
 export const Tag = styled.li`
-  color: #d8bfbf;
-  font-size: 1.5rem;
+  color: #ffffff;
+  font-size: 12px;
 `;

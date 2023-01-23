@@ -3,7 +3,7 @@ export const projects = [
     title: "Tibles",
     description:
       "With building digital collectibles since 2012 for brands like Star Wars, Disney, NFL and many more, Tibles Inc has more experience making officially-licensed digital collectibles for top brands than anyone in the business. Developed using HTML, CSS and JavaScript.",
-    image: "/images/tibles.png",
+    image: "/images/tibleslogo.png",
     tags: ["HTML", "CSS", "Javascript"],
     source: "https://www.tibles.com/",
     visit: "https://github.com/btims512/seussibles",
@@ -23,8 +23,8 @@ export const projects = [
     title: "Seussibles!",
     description:
       "A website designed for the selling and trading of the official Dr. Seuss NFT collectibles by Tibles Inc partnered with with Dapper Labs. Made using basic HTML and CSS. Fit to be responsive for all devices via the use of media queries.",
-    image: "/images/seussibles.png",
-    tags: ["HTML", "CSS"],
+      image: "/images/seuss-logo.png",
+    tags: ["HTML", "CSS", "JavaScript"],
     source: "https://seussibles.com",
     visit: "https://github.com/btims512/seussibles",
     id: 2,
@@ -33,7 +33,7 @@ export const projects = [
     title: "OneShots",
     description:
       "A simple landing page designed for Tibles Inc to showcase their new NFT private beta. Developed using vanilla Javascript, HTML and CSS and designed to be 100% dynamic via the use of media queries",
-    image: "/images/one_shots.png",
+    image: "/images/oneshots-logo.png",
     tags: ["HTML", "CSS", "Javascript", "MDB"],
     source: "https://oneshots.com",
     visit: "https://github.com/btims512/oneshots_landing_page",
@@ -43,7 +43,7 @@ export const projects = [
     title: "Instagram Clone",
     description:
       "Made using React with Firebase serving as a backend. Fully loaded with the ability to upload, comment, sign-up and sign-in, it's everything you love about Instagram without legally being Instagram!  ",
-    image: "/images/instagramclone.png",
+    image: "/images/ig-logo.png",
     tags: ["React", "Firebase", "CSS", "styled-components"],
     source: "https://instagram-clone-react-7e7e3.web.app/",
     visit: "https://github.com/btims512/instagram-clone",
@@ -63,7 +63,7 @@ export const projects = [
     title: "Chatthew",
     description:
       "Developed chat app platform integrating the use of WebSockets. Complete with account sign-in landing page then dashboard displaying chatrooms. Implemented the use of styled-components and ant-design for styling. Launched app using Netlify.",
-    image: "/images/chatthew.png",
+    image: "/images/chat-logo.png",
     tags: ["React", "JavaScript", "ChatEngine.io"],
     source: "https://chatthew.netlify.app/",
     visit: "https://github.com/btims512/Chat-App",

@@ -6,16 +6,16 @@ export const ProfilePicStyles = styled.div`
     max-width: 100%;
     max-height: 400px;
     position: absolute;
-    margin: -105px 0px 0px 110px;
+    margin: -70px 0px 0px 110px;
   }
   @media ${(props) => props.theme.breakpoints.lg} {
-    width: 45%;
+    width: 40%;
     position: absolute;
-    margin: 15px 0px 0px -31px;
+    margin: -35px 0px 0px -31px;
   }
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 45%;
+    width: 40%;
     position: absolute;
-    margin: 15px 0px 0px px;
+    margin: px 0px 0px -40px;
   }
 `;

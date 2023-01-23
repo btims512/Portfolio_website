@@ -6,6 +6,7 @@ import {
   Section,
   SectionText,
   SectionTitle,
+  SectionTitleH1,
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection } from "./HeroStyles";
@@ -15,14 +16,12 @@ const Hero = (props) => (
   <Section row nopadding>
     <LeftSection>
       <Flip left>
-        <SectionTitle main center>
+        <SectionTitleH1 main center>
           Benjamin Tims
-        </SectionTitle>
+        </SectionTitleH1>
         <SectionText />
       </Flip>
       <AboutText />
-      <br />
-      <br />
       <br />
       <Zoom clear>
         <Button
