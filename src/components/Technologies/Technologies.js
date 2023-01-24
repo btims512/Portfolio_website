@@ -16,14 +16,13 @@ import Zoom from "react-reveal/Zoom";
 import Bounce from "react-reveal/Bounce";
 
 const Technologies = () => (
-  <Section id="tech">
+  <Section nopadding id="tech">
     <Zoom>
-      <SectionDivider />
       <br />
-      <SectionTitle>Technologies</SectionTitle>
+      <SectionTitle main>Technologies</SectionTitle>
       <List>
         <ListItem>
-          <DiReact size="4rem" />
+          <DiReact size="72px" color="#F46737" />
           <ListContainer>
             <ListTitle>Front-End</ListTitle>
             <ListParagraph>
@@ -33,7 +32,7 @@ const Technologies = () => (
           </ListContainer>
         </ListItem>
         <ListItem>
-          <DiFirebase size="3rem" />
+          <DiFirebase size="72px" color="#F46737"  />
           <ListContainer>
             <ListTitle>Back-End</ListTitle>
             <ListParagraph>
@@ -43,7 +42,7 @@ const Technologies = () => (
           </ListContainer>
         </ListItem>
         <ListItem>
-          <DiNodejsSmall size="3rem" />
+          <DiNodejsSmall size="72px" color="#F46737" />
           <ListContainer>
             <ListTitle>Frameworks & Libraries</ListTitle>
             <ListParagraph>

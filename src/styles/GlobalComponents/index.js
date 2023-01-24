@@ -5,6 +5,41 @@ export const Section = styled.section`
   flex-direction: ${(props) => (props.row ? "row" : "column")};
   padding: ${(props) => (props.nopadding ? "0" : "216px 30px 51px 36px")};
   margin: 0 auto;
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  /* margin-left: -26px; */
+  align-items: ${(props) => (props.about ? "center" : "0")};
+  @media ${(props) => props.theme.breakpoints.xlg} {
+    margin-left: -3px;
+    padding-bottom: 10px;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 38px 40px 12px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
+    /* padding: 38px 40px 12px; */
+    margin-left: 0px;
+    max-width: 1040px;
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
+  @media ${(props) => props.theme.breakpoints.xsm} {
+    padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
+    max-width: 1040px;
+    min-inline-size: min-content;
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
+`;
+
+export const ProjectSection = styled.section`
+  display: ${(props) => (props.grid ? "grid" : "flex")};
+  flex-direction: ${(props) => (props.row ? "row" : "column")};
+  padding: ${(props) => (props.nopadding ? "0" : "216px 30px 51px 36px")};
+  margin: 0 auto;
   /* padding-right: 285px; */
   /* max-width: 1040px; */
   box-sizing: content-box;
@@ -35,38 +70,6 @@ export const Section = styled.section`
     min-inline-size: min-content;
     width: calc(100vw - 32px);
     flex-direction: column;
-  }
-`;
-
-export const ProjectSection = styled.section`
-  display: ${(props) => (props.grid ? "grid" : "flex")};
-  flex-direction: ${(props) => (props.row ? "row" : "column")};
-  padding: ${(props) => (props.nopadding ? "0" : "216px 30px 51px 36px")};
-  margin: 0 auto;
-  max-width: 1040px;
-  padding: 4rem;
-  min-inline-size: min-content;
-  box-sizing: content-box;
-  position: relative;
-  overflow: hidden;
-  min-width: fit-content;
-  padding-bottom: 10px;
-  grid-template-columns: 1fr 1fr;
-
-  @media ${(props) => props.theme.breakpoints.lg} {
-    min-inline-size: min-content;
-  }
-
-  @media ${(props) => props.theme.breakpoints.md} {
-    flex-direction: column;
-    padding: 38px 37px 12px;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
-    width: calc(100vw - 32px);
-    flex-direction: column;
-    padding: 0px 18px 8px;
   }
 `;
 
@@ -117,10 +120,15 @@ export const SectionTitle = styled.h2`
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 16px;
-  padding: ${(props) => (props.main ? "18px 0 16px" : "0")};
+  margin-bottom: -45px;
+  
+  padding: ${(props) => (props.main ? "18px 34px;" : "0")};
 
   @media ${(props) => props.theme.breakpoints.xlg} {
+    align-items: ${(props) => (props.about ? "center" : "0")};
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
     padding: 25px 35px 32px;
   }
 
@@ -128,22 +136,18 @@ export const SectionTitle = styled.h2`
     font-size: ${(props) => (props.main ? "32px" : "48px")};
     line-height: ${(props) => (props.main ? "56px" : "48px")};
     margin-bottom: 12px;
-    padding: ${(props) => (props.main ? "40px 0 12px" : "0")};
+    padding: ${(props) => (props.main ? "40px 23px 12px" : "0")};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 32px;
     line-height: 40px;
-    font-size: ${(props) => (props.main ? "28px" : "32px")};
+    font-size: ${(props) => (props.main ? "22px" : "32px")};
     line-height: ${(props) => (props.main ? "32px" : "40px")};
     margin-bottom: 8px;
-    padding: ${(props) => (props.main ? "16px 0 8px" : "0")};
+    padding: ${(props) => (props.main ? "0px 24px 8px" : "0")};
     max-width: 100%;
   }
-
-  /* @media ${(props) => props.theme.breakpoints.lg} {
-    padding: 4rem;
-  } */
 `;
 
 export const ProjectSectionTitle = styled.h2`
@@ -219,6 +223,7 @@ export const SectionDivider = styled.div`
   height: 6px;
   border-radius: 10px;
   background-color: #fff;
+  display: none;
   background: ${(props) =>
     props.colorAlt
       ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"

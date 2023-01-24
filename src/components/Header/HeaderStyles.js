@@ -33,14 +33,15 @@ export const Div1 = styled.div`
 export const Div2 = styled.div`
   grid-area: 1 / 1 / 2 / 5;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 21px;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 6;
     margin: -12px 9px 1px -52px;
   }
 
   @media ${(props) => props.theme.breakpoints.xlg} {
-    padding-right: 245px;
+    /* padding-right: 245px; */
   }
 
   @media ${(props) => props.theme.breakpoints.lg} {

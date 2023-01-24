@@ -7,6 +7,7 @@ export const LeftSection = styled.div`
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    text-align: -webkit-center;
   }
   @media ${(props) => props.theme.breakpoints.lg} {
     margin-top: -60px;

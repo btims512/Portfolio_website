@@ -7,9 +7,9 @@ import { Box, Boxes, BoxNum, BoxText } from "./AcomplishmentsStyles";
 import { data } from "../../constants/constants";
 
 const Accomplishments = () => (
-  <Section>
+  <Section nopadding>
     <Flip bottom>
-      <SectionTitle>Personal Accomplishments</SectionTitle>
+      <SectionTitle main>Accomplishments</SectionTitle>
       <img
         src="../images/acc_border_certificate.png"
         style={{

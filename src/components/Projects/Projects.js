@@ -15,18 +15,18 @@ import {
   UtilityList,
   Img,
   StackTitle,
-  TitleHeader
+  TitleHeader,
 } from "./ProjectsStyles";
 import {
-  Section,
-  ProjectSectionTitle,
+  ProjectSection,
+  SectionTitle
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 
 const Projects = () => (
-  <Section nopadding id="projects">
+  <ProjectSection nopadding id="projects">
     <Roll left>
-      <ProjectSectionTitle main>Projects</ProjectSectionTitle>
+      <SectionTitle main>Projects</SectionTitle>
     </Roll>
     <GridContainer>
       {projects.map(
@@ -61,7 +61,7 @@ const Projects = () => (
         )
       )}
     </GridContainer>
-  </Section>
+  </ProjectSection>
 );
 
 export default Projects;

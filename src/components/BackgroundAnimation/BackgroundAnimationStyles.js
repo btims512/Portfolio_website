@@ -23,4 +23,9 @@ export const ProfilePicStyles = styled.div`
     position: absolute;
     margin: px 0px 0px -40px;
   }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 40%;
+    position: absolute;
+    margin: px 0px 0px -40px;
+  }
 `;
