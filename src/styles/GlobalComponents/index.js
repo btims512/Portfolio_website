@@ -5,7 +5,8 @@ export const Section = styled.section`
   flex-direction: ${(props) => (props.row ? "row" : "column")};
   padding: ${(props) => (props.nopadding ? "0" : "216px 30px 51px 36px")};
   margin: 0 auto;
-  max-width: 1040px;
+  /* padding-right: 285px; */
+  /* max-width: 1040px; */
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
@@ -16,8 +17,6 @@ export const Section = styled.section`
     padding: 200px 0px;
     flex-direction: column;
   } */
-  @media ${(props) => props.theme.breakpoints.lg} {
-  }
   @media ${(props) => props.theme.breakpoints.md} {
     /* padding: 200px 0px; */
     flex-direction: column;
@@ -25,7 +24,15 @@ export const Section = styled.section`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
+    max-width: 1040px;
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
 
+  @media ${(props) => props.theme.breakpoints.xsm} {
+    padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
+    max-width: 1040px;
+    min-inline-size: min-content;
     width: calc(100vw - 32px);
     flex-direction: column;
   }
@@ -38,25 +45,29 @@ export const ProjectSection = styled.section`
   margin: 0 auto;
   max-width: 1040px;
   padding: 4rem;
+  /* display: none; */
+  min-inline-size: min-content;
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
+  min-width: fit-content;
   padding-bottom: 10px;
   grid-template-columns: 1fr 1fr;
   /* @media ${(props) => props.theme.breakpoints.xlg} {
     padding: 200px 0px;
     flex-direction: column;
   } */
-  /* @media ${(props) => props.theme.breakpoints.lg} {
-    padding: 4rem;
-  } */
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    min-inline-size: min-content;
+  }
+
   @media ${(props) => props.theme.breakpoints.md} {
     flex-direction: column;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
-
     width: calc(100vw - 32px);
     flex-direction: column;
   }
@@ -64,7 +75,7 @@ export const ProjectSection = styled.section`
 
 export const SectionTitleH1 = styled.h1`
   font-weight: 800;
-  font-size: ${(props) => (props.main ? "48px" : "48px")};
+  font-size: ${(props) => (props.main ? "48px" : "52px")};
   line-height: ${(props) => (props.main ? "72px" : "56px")};
   width: max-content;
   max-width: 100%;
@@ -88,7 +99,7 @@ export const SectionTitleH1 = styled.h1`
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 32px;
     line-height: 40px;
-    font-size: ${(props) => (props.main ? "28px" : "32px")};
+    font-size: ${(props) => (props.main ? "38px" : "32px")};
     line-height: ${(props) => (props.main ? "32px" : "40px")};
     margin-bottom: 0px;
     padding: ${(props) => (props.main ? "16px 0 0px" : "0")};
@@ -111,6 +122,10 @@ export const SectionTitle = styled.h2`
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
   padding: ${(props) => (props.main ? "18px 0 16px" : "0")};
+
+  @media ${(props) => props.theme.breakpoints.xlg} {
+    padding: 25px 35px 32px;
+  }
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: ${(props) => (props.main ? "32px" : "48px")};
@@ -150,20 +165,28 @@ export const ProjectSectionTitle = styled.h2`
   margin-bottom: 16px;
   padding: ${(props) => (props.main ? "18px 0 16px" : "0")};
 
+  @media ${(props) => props.theme.breakpoints.xlg} {
+    padding: 25px 35px 32px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    padding: 25px 35px 32px;
+  }
+
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: ${(props) => (props.main ? "32px" : "48px")};
     line-height: ${(props) => (props.main ? "56px" : "48px")};
     margin-bottom: 12px;
-    padding: ${(props) => (props.main ? "40px 0 12px" : "0")};
+    padding: ${(props) => (props.main ? "40px 23px 12px" : "0")};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 32px;
     line-height: 40px;
-    font-size: ${(props) => (props.main ? "28px" : "32px")};
+    font-size: ${(props) => (props.main ? "22px" : "32px")};
     line-height: ${(props) => (props.main ? "32px" : "40px")};
     margin-bottom: 8px;
-    padding: ${(props) => (props.main ? "16px 0 8px" : "0")};
+    padding: ${(props) => (props.main ? "0px 3px 8px" : "0")};
     max-width: 100%;
   }
 
@@ -318,7 +341,7 @@ export const ButtonBack = styled.div`
     width: 40%;
     height: 35px;
     font-size: 14px;
-    margin-bottom: ${({ alt }) => (alt ? "0" : "132px")};
+    margin-bottom: ${({ alt }) => (alt ? "0" : "75px")};
   }
   @media ${(props) => props.theme.breakpoints.xsm} {
     width: 50%;

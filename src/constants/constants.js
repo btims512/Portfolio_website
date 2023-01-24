@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Tibles",
     description:
-      "With building digital collectibles since 2012 for brands like Star Wars, Disney, NFL and many more, Tibles Inc has more experience making officially-licensed digital collectibles for top brands than anyone in the business. Developed using HTML, CSS and JavaScript.",
+      "With building digital collectibles since 2012 for brands like Star Wars, Disney, NFL and many more, Tibles Inc has more experience making officially-licensed digital collectibles for top brands than anyone in the business.",
     image: "/images/tibleslogo.png",
     tags: ["HTML", "CSS", "Javascript"],
     source: "https://www.tibles.com/",
@@ -13,7 +13,7 @@ export const projects = [
     title: "Vinyl Reckoning",
     description:
       "A fun website designed for a podcast that discusses vinyl records mainly from the 2000's pop-punk era. Developed using react with styled-components and optimized with the 'mobile first' mentality.",
-    image: "/images/vinyl_reck.png",
+    image: "/images/vr-logo.png",
     tags: ["React", "JSX", "CSS", "Styled-components"],
     source: "https://vinylreckoning.netlify.app/",
     visit: "https://github.com/btims512/vinyl_reckoning",
@@ -23,7 +23,7 @@ export const projects = [
     title: "Seussibles!",
     description:
       "A website designed for the selling and trading of the official Dr. Seuss NFT collectibles by Tibles Inc partnered with with Dapper Labs. Made using basic HTML and CSS. Fit to be responsive for all devices via the use of media queries.",
-      image: "/images/seuss-logo.png",
+    image: "/images/seuss-logo.png",
     tags: ["HTML", "CSS", "JavaScript"],
     source: "https://seussibles.com",
     visit: "https://github.com/btims512/seussibles",
@@ -50,10 +50,10 @@ export const projects = [
     id: 0,
   },
   {
-    title: 'Exchange Rates "R" Us',
+    title: "Exchange Rate$",
     description:
-      "An app designed for simplicity, yet effectiveness when needed. I personally used this app many times while traveling throughout Mexico for help with ever-changing exchange rates. Developed using React and Node-Fetch, this app consumes exchangeratesapi.io and is constantly updated for latest rates.",
-    image: "/images/exchangeratepic.png",
+      "An app designed for simplicity, yet effectiveness. I personally used this app many times while traveling throughout Mexico for help with exchange rates. This app consumes exchangeratesapi.io and is constantly updated for latest rates.",
+    image: "/images/exchange-logo.png",
     tags: ["React", "Node-Fetch"],
     source: "https://exchangeratesrus.netlify.app/",
     visit: "https://github.com/btims512/exchangeRate",
@@ -73,7 +73,7 @@ export const projects = [
     title: "Find Dat Gif!",
     description:
       "A fun app to find the perfect GIF for how you're feeling including a trending home page and random section if you're not unsure. Developed using Express and consuming Giphy's API via Node-Fetch.",
-    image: "/images/FDG.jpg",
+    image: "/images/tibleslogo.png",
     tags: ["JavaScript", "EJS", "Node-Fetch", "CSS"],
     source: "https://finddatgif.herokuapp.com/",
     visit: "https://github.com/btims512/projects",
@@ -83,7 +83,7 @@ export const projects = [
     title: "Insights",
     description:
       "Led front-end development in crowd-sourced business review app highlighting local minority owned businesses in the Austin area. Implemented the use of Yelp s API to achieve backend data with full CRUD functionality and deployed app using AWS.",
-    image: "/images/insights.png",
+    image: "/images/tibleslogo.png",
     tags: ["React", "CSS", "MongoDB", "Node"],
     source: "https://main.d32hto66cg6s2c.amplifyapp.com",
     visit: "https://github.com/ACCSoftwareBootcamp/insights",

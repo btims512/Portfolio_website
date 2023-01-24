@@ -14,19 +14,17 @@ import {
   TitleContent,
   UtilityList,
   Img,
-  StackTitle
+  StackTitle,
+  TitleHeader
 } from "./ProjectsStyles";
 import {
   Section,
-  SectionDivider,
-  SectionTitle,
-  ProjectSectionTitle
+  ProjectSectionTitle,
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 
 const Projects = () => (
   <Section nopadding id="projects">
-    <SectionDivider />
     <Roll left>
       <ProjectSectionTitle main>Projects</ProjectSectionTitle>
     </Roll>
@@ -36,9 +34,12 @@ const Projects = () => (
           <Slide left>
             <BlogCard key={id}>
               <TitleContent>
-                <HeaderThree title>
+              <HeaderThree title>
               <Img src={image} />
-                {title}</HeaderThree>
+              <TitleHeader>
+                {title}
+              </TitleHeader>
+                </HeaderThree>
                 <Hr />
               </TitleContent>
               <CardInfo>{description}</CardInfo>

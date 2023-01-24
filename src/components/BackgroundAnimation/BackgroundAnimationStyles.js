@@ -6,7 +6,12 @@ export const ProfilePicStyles = styled.div`
     max-width: 100%;
     max-height: 400px;
     position: absolute;
-    margin: -70px 0px 0px 110px;
+    margin: -39px 0px 0px 140px;
+  }
+  @media ${(props) => props.theme.breakpoints.xlg} {
+    width: 40%;
+    position: absolute;
+    margin: 10px 0px 0px 20px;
   }
   @media ${(props) => props.theme.breakpoints.lg} {
     width: 40%;

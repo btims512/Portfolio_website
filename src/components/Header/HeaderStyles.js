@@ -39,9 +39,22 @@ export const Div2 = styled.div`
     margin: -12px 9px 1px -52px;
   }
 
+  @media ${(props) => props.theme.breakpoints.xlg} {
+    padding-right: 245px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    padding-right: 31px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    margin-right: -63px;
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 1 / 3 / 6;
-    margin: -12px 9px 1px -11px;
+    margin: 5px 9px 1px 36px;
+    gap: 10px;
   }
 `;
 export const Div3 = styled.div`
