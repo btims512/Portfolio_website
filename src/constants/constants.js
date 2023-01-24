@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: "Apple",
+    description:
+      "Develop and maintain accessible, responsive, functional and rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks.",
+    image: "/images/apple-logo.png",
+    tags: ["JavaScript", "Drupal", "HTML", "CSS"],
+    source: "https://finddatgif.herokuapp.com/",
+    visit: "https://github.com/btims512/projects",
+    id: 2,
+  },
+  {
     title: "Tibles",
     description:
       "With building digital collectibles since 2012 for brands like Star Wars, Disney, NFL and many more, Tibles Inc has more experience making officially-licensed digital collectibles for top brands than anyone in the business.",
@@ -7,16 +17,6 @@ export const projects = [
     tags: ["HTML", "CSS", "Javascript"],
     source: "https://www.tibles.com/",
     visit: "https://github.com/btims512/seussibles",
-    id: 2,
-  },
-  {
-    title: "Vinyl Reckoning",
-    description:
-      "A fun website designed for a podcast that discusses vinyl records mainly from the 2000's pop-punk era. Developed using react with styled-components and optimized with the 'mobile first' mentality.",
-    image: "/images/vr-logo.png",
-    tags: ["React", "JSX", "CSS", "Styled-components"],
-    source: "https://vinylreckoning.netlify.app/",
-    visit: "https://github.com/btims512/vinyl_reckoning",
     id: 2,
   },
   {
@@ -40,6 +40,16 @@ export const projects = [
     id: 2,
   },
   {
+    title: "Vinyl Reckoning",
+    description:
+      "A fun website designed for a podcast that discusses vinyl records mainly from the 2000's pop-punk era. Developed using react with styled-components and optimized with the 'mobile first' mentality.",
+    image: "/images/vr-logo.png",
+    tags: ["React", "JSX", "CSS", "Styled-components"],
+    source: "https://vinylreckoning.netlify.app/",
+    visit: "https://github.com/btims512/vinyl_reckoning",
+    id: 2,
+  },
+  {
     title: "Instagram Clone",
     description:
       "Made using React with Firebase serving as a backend. Fully loaded with the ability to upload, comment, sign-up and sign-in, it's everything you love about Instagram without legally being Instagram!  ",
@@ -47,7 +57,7 @@ export const projects = [
     tags: ["React", "Firebase", "CSS", "styled-components"],
     source: "https://instagram-clone-react-7e7e3.web.app/",
     visit: "https://github.com/btims512/instagram-clone",
-    id: 0,
+    id: 2,
   },
   {
     title: "Exchange Rate$",
@@ -57,7 +67,7 @@ export const projects = [
     tags: ["React", "Node-Fetch"],
     source: "https://exchangeratesrus.netlify.app/",
     visit: "https://github.com/btims512/exchangeRate",
-    id: 3,
+    id: 2,
   },
   {
     title: "Chatthew",
@@ -67,27 +77,17 @@ export const projects = [
     tags: ["React", "JavaScript", "ChatEngine.io"],
     source: "https://chatthew.netlify.app/",
     visit: "https://github.com/btims512/Chat-App",
-    id: 1,
+    id: 2,
   },
   {
     title: "Find Dat Gif!",
     description:
-      "A fun app to find the perfect GIF for how you're feeling including a trending home page and random section if you're not unsure. Developed using Express and consuming Giphy's API via Node-Fetch.",
+      "A fun app to find the perfect GIF for how you're feeling, including a trending home page and random section if you're not quiet sure how you're feeling. Developed using Express and consuming Giphy's API via Node-Fetch.",
     image: "/images/tibleslogo.png",
     tags: ["JavaScript", "EJS", "Node-Fetch", "CSS"],
     source: "https://finddatgif.herokuapp.com/",
     visit: "https://github.com/btims512/projects",
     id: 2,
-  },
-  {
-    title: "Insights",
-    description:
-      "Led front-end development in crowd-sourced business review app highlighting local minority owned businesses in the Austin area. Implemented the use of Yelp s API to achieve backend data with full CRUD functionality and deployed app using AWS.",
-    image: "/images/tibleslogo.png",
-    tags: ["React", "CSS", "MongoDB", "Node"],
-    source: "https://main.d32hto66cg6s2c.amplifyapp.com",
-    visit: "https://github.com/ACCSoftwareBootcamp/insights",
-    id: 0,
   },
 ];
 

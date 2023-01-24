@@ -17,7 +17,7 @@ const BackgroundAnimation = () => (
         </ProfilePicStyles>
       </div>
       <svg
-        style={{ margin: "-100px -16px 110px 97px" }}
+        style={{ margin: "-70px -16px 110px 97px", width: "630px" }}
         className="BgAnimation__svg"
         viewBox="0 0 602 602"
         fill="none"

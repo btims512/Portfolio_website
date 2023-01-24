@@ -10,7 +10,9 @@ import {
   Div3,
   NavLink,
   SocialIcons,
+  SocialIconLinkedIn,
   Span,
+  SocialIconGit,
 } from "./HeaderStyles";
 
 const Header = () => (
@@ -24,8 +26,7 @@ const Header = () => (
             color: "white",
             marginBottom: "20px",
           }}
-        >
-        </a>
+        ></a>
       </Link>
     </Div1>
     <Div2>
@@ -51,18 +52,18 @@ const Header = () => (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons
+      <SocialIconGit
         onClick={() => window.open("https://github.com/btims512/", "_blank")}
       >
-        <AiFillGithub size="3rem" />
-      </SocialIcons>
-      <SocialIcons
+        <AiFillGithub size="4rem" />
+      </SocialIconGit>
+      <SocialIconLinkedIn
         onClick={() =>
           window.open("https://www.linkedin.com/in/benjamintims/", "_blank")
         }
       >
-        <AiFillLinkedin size="3rem" />
-      </SocialIcons>
+        <AiFillLinkedin size="4rem" />
+      </SocialIconLinkedIn>
     </Div3>
   </Container>
 );

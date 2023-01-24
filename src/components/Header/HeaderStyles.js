@@ -63,9 +63,10 @@ export const Div3 = styled.div`
   justify-content: space-around;
   align-items: center;
   gap: 10px;
+  margin-right: 15px;
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
-    grid-area: 1 / 4 / 2 / 6;
+    grid-area: 1 / 5 / 2 / 6;
   }
 `;
 
@@ -139,7 +140,32 @@ export const SocialIcons = styled.a`
   border-radius: 50px;
   padding: 8px;
   &:hover {
-    background-color: #212d45;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+`;
+
+export const SocialIconGit = styled.a`
+  transition: 0.3s ease;
+  color: white;
+  border-radius: 50px;
+  padding: 8px;
+  &:hover {
+    background-color: #dbe1e6;
+    color: black;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+`;
+
+export const SocialIconLinkedIn = styled.a`
+  transition: 0.3s ease;
+  color: white;
+  border-radius: 50px;
+  padding: 8px;
+  &:hover {
+    background-color: #dbe1e6;
+    color: #0966c2;
     transform: scale(1.2);
     cursor: pointer;
   }

@@ -11,12 +11,12 @@ export const ProfilePicStyles = styled.div`
   @media ${(props) => props.theme.breakpoints.xlg} {
     width: 40%;
     position: absolute;
-    margin: 10px 0px 0px 20px;
+    margin: -40px 0px 0px -0%;
   }
   @media ${(props) => props.theme.breakpoints.lg} {
     width: 40%;
     position: absolute;
-    margin: -35px 0px 0px -31px;
+    margin: -85px 0px 0px -80px;
   }
   @media ${(props) => props.theme.breakpoints.md} {
     width: 40%;

@@ -10,21 +10,21 @@ export const Section = styled.section`
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
-  padding-bottom: 10px;
+  margin-bottom: -160px;
   grid-template-columns: 1fr 1fr;
 
-  /* @media ${(props) => props.theme.breakpoints.xlg} {
-    padding: 200px 0px;
-    flex-direction: column;
-  } */
+  @media ${(props) => props.theme.breakpoints.xlg} {
+    margin-left: -3px;
+  }
   @media ${(props) => props.theme.breakpoints.md} {
-    /* padding: 200px 0px; */
-    flex-direction: column;
+    /* padding: 38px 40px 12px; */
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
     max-width: 1040px;
+    margin-bottom: 0px;
+    padding: 0px 19px 16px;
     width: calc(100vw - 32px);
     flex-direction: column;
   }
@@ -45,7 +45,6 @@ export const ProjectSection = styled.section`
   margin: 0 auto;
   max-width: 1040px;
   padding: 4rem;
-  /* display: none; */
   min-inline-size: min-content;
   box-sizing: content-box;
   position: relative;
@@ -53,10 +52,6 @@ export const ProjectSection = styled.section`
   min-width: fit-content;
   padding-bottom: 10px;
   grid-template-columns: 1fr 1fr;
-  /* @media ${(props) => props.theme.breakpoints.xlg} {
-    padding: 200px 0px;
-    flex-direction: column;
-  } */
 
   @media ${(props) => props.theme.breakpoints.lg} {
     min-inline-size: min-content;
@@ -64,12 +59,14 @@ export const ProjectSection = styled.section`
 
   @media ${(props) => props.theme.breakpoints.md} {
     flex-direction: column;
+    padding: 38px 37px 12px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
     width: calc(100vw - 32px);
     flex-direction: column;
+    padding: 0px 18px 8px;
   }
 `;
 
@@ -162,7 +159,7 @@ export const ProjectSectionTitle = styled.h2`
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 16px;
+  margin-bottom: -45px;
   padding: ${(props) => (props.main ? "18px 0 16px" : "0")};
 
   @media ${(props) => props.theme.breakpoints.xlg} {
@@ -186,7 +183,7 @@ export const ProjectSectionTitle = styled.h2`
     font-size: ${(props) => (props.main ? "22px" : "32px")};
     line-height: ${(props) => (props.main ? "32px" : "40px")};
     margin-bottom: 8px;
-    padding: ${(props) => (props.main ? "0px 3px 8px" : "0")};
+    padding: ${(props) => (props.main ? "0px 24px 8px" : "0")};
     max-width: 100%;
   }
 

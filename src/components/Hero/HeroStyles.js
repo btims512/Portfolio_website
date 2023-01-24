@@ -20,6 +20,7 @@ export const LeftSection = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
     display: flex;
+    gap: 8px;
     flex-direction: column;
     margin: 0 auto;
   }
