@@ -8,6 +8,7 @@ import About from "../components/About/About";
 import Timeline from "../components/TimeLine/TimeLine";
 import { Layout } from "../layout/Layout";
 import { Section, BigBreak } from "../styles/GlobalComponents";
+import Nav from "../components/Nav/Nav";
 
 const Home = () => {
   return (

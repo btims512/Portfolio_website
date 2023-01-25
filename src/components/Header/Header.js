@@ -17,18 +17,6 @@ import {
 
 const Header = () => (
   <Container>
-    <Div1>
-      <Link href="/">
-        <a
-          style={{
-            display: "flex",
-            alignItems: "center",
-            color: "white",
-            marginBottom: "20px",
-          }}
-        ></a>
-      </Link>
-    </Div1>
     <Div2>
       <li>
         <Link href="#projects">

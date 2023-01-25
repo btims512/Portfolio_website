@@ -2,20 +2,20 @@ import { IoIosArrowDropdown } from "react-icons/io";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
   padding: 1rem;
-  padding-top: 2rem;
-
+  padding-top: 2rem; */
+/* 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 60px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
-  }
+  } */
 `;
 
 export const Span = styled.span`
@@ -31,17 +31,20 @@ export const Div1 = styled.div`
   }
 `;
 export const Div2 = styled.div`
-  grid-area: 1 / 1 / 2 / 5;
+  /* grid-area: 1 / 1 / 2 / 3;
   display: flex;
-  justify-content: space-between;
-  padding-left: 21px;
-  @media ${(props) => props.theme.breakpoints.sm} {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify; */
+  /* padding-left: 21px; */
+  /* justify-content: flex-start; */
+  /* @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 6;
     margin: -12px 9px 1px -52px;
   }
 
   @media ${(props) => props.theme.breakpoints.xlg} {
-    /* padding-right: 245px; */
+
   }
 
   @media ${(props) => props.theme.breakpoints.lg} {
@@ -56,10 +59,10 @@ export const Div2 = styled.div`
     grid-area: 2 / 1 / 3 / 6;
     margin: 5px 9px 1px 36px;
     gap: 10px;
-  }
+  } */
 `;
 export const Div3 = styled.div`
-  grid-area: 1 / 8;
+  /* grid-area: 1 / 8;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -68,7 +71,7 @@ export const Div3 = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
     grid-area: 1 / 5 / 2 / 6;
-  }
+  } */
 `;
 
 // Navigation Links
