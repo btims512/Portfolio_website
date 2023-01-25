@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Section = styled.section`
   display: ${(props) => (props.grid ? "grid" : "flex")};
   flex-direction: ${(props) => (props.row ? "row" : "column")};
+  margin: ${(props) => (props.margin ? "0" : "216px 30px 51px 36px")};
   padding: ${(props) => (props.nopadding ? "0" : "216px 30px 51px 36px")};
   margin: 0 auto;
   box-sizing: content-box;
@@ -121,7 +122,7 @@ export const SectionTitle = styled.h2`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: -45px;
-  
+
   padding: ${(props) => (props.main ? "18px 34px;" : "0")};
 
   @media ${(props) => props.theme.breakpoints.xlg} {
@@ -310,6 +311,17 @@ export const SecondaryBtn = styled.button`
   }
 `;
 
+export const SectionImg = styled.div`
+  width: fit-content;
+  padding-left: 0px;
+  align-items: feComponentTransfer;
+  @media ${(props) => props.theme.breakpoints.md} {
+  }
+  @media ${(props) => props.theme.breakpoints.xlg} {
+    margin-top: 40px;
+  }
+`;
+
 // Actual button sizing //
 export const ButtonBack = styled.div`
   width: ${({ alt }) => (alt ? "150px" : "190px")};
@@ -438,5 +450,50 @@ export const LinkIconImg = styled.div`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     height: ${({ large }) => (large ? "32px" : "16px")};
+  }
+`;
+
+export const BigBreak = styled.div`
+  /* max-width: 1280px */
+  @media ${(props) => props.theme.breakpoints.xlg} {
+    margin-top: 49%;
+  }
+
+  /* max-width: 1024px */
+  @media ${(props) => props.theme.breakpoints.lg} {
+    margin-top: 64%;
+  }
+
+  /* max-width: 746px */
+  @media ${(props) => props.theme.breakpoints.md} {
+    margin-top: 65%;
+  }
+
+  /* max-width: 670px */
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin-top: 140%;
+  }
+  /* max-width: 360px */
+  @media ${(props) => props.theme.breakpoints.xsm} {
+    height: ${({ large }) => (large ? "32px" : "16px")};
+  }
+`;
+
+export const Img = styled.div`
+  height: 500px;
+  width: 500px;
+  /* height: auto;
+  box-shadow: 26px 21px 20px rgba(80, 78, 78, 0.5);
+  border-radius: 10px; */
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    /* max-width: 672px;
+    font-size: 16px;
+    line-height: 25px; */
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    /* font-size: 14px;
+    line-height: 22px; */
   }
 `;

@@ -21,29 +21,33 @@ const About = () => {
               id="profilePic"
               src="../images/profile-pic-2.png"
               style={{
-                width: "400px",
+                width: "300px",
                 maxWidth: "100%",
                 height: "400",
                 borderRadius: "10px",
               }}
             />{" "}
           </div>
-          <div className="about-text">
-            <SectionTitle
-              style={{ fontSize: "32px", padding: "0px 0px 30px 8px" }}
-            >
-              About
-            </SectionTitle>
-
+          <div
+            className="about-text"
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              flexDirection: "row",
+              justifyContent: "space-around",
+            }}
+          >
+            <AboutSectionTitle>About</AboutSectionTitle>
             <SectionText
               style={{
+                MaxWidth: "625px",
                 fontSize: "16px",
                 padding: "10px",
                 fontWeight: "400",
                 lineHeight: "16px",
               }}
             >
-              <AboutText>
+              <AboutText style={{ width: "400px" }}>
                 <p>
                   {" "}
                   <br />

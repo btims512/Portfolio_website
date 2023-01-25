@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const CarouselContainer = styled.ul`
-  max-width: 1040px;
+  max-width: fit-content;
   background: #0f1624;
-  padding: 0rem;
+  padding-left: 2rem;
   list-style: none;
   display: flex;
   justify-content: space-between;

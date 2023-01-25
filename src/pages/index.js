@@ -7,7 +7,7 @@ import Technologies from "../components/Technologies/Technologies";
 import About from "../components/About/About";
 import Timeline from "../components/TimeLine/TimeLine";
 import { Layout } from "../layout/Layout";
-import { Section } from "../styles/GlobalComponents";
+import { Section, BigBreak } from "../styles/GlobalComponents";
 
 const Home = () => {
   return (
@@ -20,6 +20,7 @@ const Home = () => {
       <Experience />
       <Technologies />
       <About />
+      {/* <BigBreak /> */}
       <Timeline />
       <Acomplishments />
     </Layout>

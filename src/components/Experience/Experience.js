@@ -26,7 +26,7 @@ const Experience = () => {
                   <div class="timeline-content">
                     <h3>{`${item.year}`}</h3>
                     <h3>{`${item.company}`}</h3>
-                    <h4>{`${item.title}`}</h4>
+                    <h4 style={{ color: "#F46737" }}>{`${item.title}`}</h4>
                     <br />
                     <ul>
                       <li>{`${item.responsibilities[0]}`}</li>

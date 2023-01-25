@@ -83,7 +83,7 @@ export const projects = [
     title: "Find Dat Gif!",
     description:
       "A fun app to find the perfect GIF for how you're feeling, including a trending home page and random section if you're not quiet sure how you're feeling. Developed using Express and consuming Giphy's API via Node-Fetch.",
-    image: "/images/tibleslogo.png",
+    image: "/images/gif-logo.png",
     tags: ["JavaScript", "EJS", "Node-Fetch", "CSS"],
     source: "https://finddatgif.herokuapp.com/",
     visit: "https://github.com/btims512/projects",

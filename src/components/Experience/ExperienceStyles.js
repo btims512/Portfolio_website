@@ -42,7 +42,7 @@ export const Timeline = styled.tbody`
     width: 2px;
     height: 100%;
     background: #ccd1d9;
-    z-index: 1;
+    /* z-index: 1; */
   }
 
   .timeline-block {
@@ -70,13 +70,14 @@ export const Timeline = styled.tbody`
   }
 
   .marker {
-    width: 16px;
-    height: 16px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 2px solid #f5f7fa;
-    background: #4fc1e9;
-    margin-top: 12px;
+    background: #0e131f;
+    /* margin-top: 12px; */
     z-index: 9999;
+    margin: -7px;
   }
 
   .timeline-content {
@@ -113,7 +114,7 @@ export const Timeline = styled.tbody`
   @media screen and (max-width: 768px) {
     .container:before {
       left: 8px;
-      width: 2px;
+      width: 4px;
     }
     .timeline-block {
       width: 100%;
@@ -133,6 +134,10 @@ export const Timeline = styled.tbody`
       margin-bottom: 10px;
       width: 90%;
       text-align: left;
+    }
+
+    .marker {
+      margin: -5px;
     }
   }
 `;
