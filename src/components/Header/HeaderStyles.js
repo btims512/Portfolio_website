@@ -2,20 +2,20 @@ import { IoIosArrowDropdown } from "react-icons/io";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  /* display: grid;
+  display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
   padding: 1rem;
-  padding-top: 2rem; */
-/* 
+  padding-top: 2rem;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 60px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
-  } */
+  }
 `;
 
 export const Span = styled.span`
@@ -31,6 +31,7 @@ export const Div1 = styled.div`
   }
 `;
 export const Div2 = styled.div`
+  /* display: flex; */
   /* grid-area: 1 / 1 / 2 / 3;
   display: flex;
   -webkit-box-pack: justify;
@@ -76,7 +77,7 @@ export const Div3 = styled.div`
 
 // Navigation Links
 export const NavLink = styled.a`
-  font-size: 2rem;
+  /* font-size: 2rem;
   line-height: 32px;
   color: #fbfbfb;
   transition: 0.4s ease;
@@ -88,7 +89,7 @@ export const NavLink = styled.a`
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.5rem;
     font-size: 16px;
-  }
+  } */
 `;
 
 /// DropDown Contact

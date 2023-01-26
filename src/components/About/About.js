@@ -13,7 +13,7 @@ const About = () => {
   return (
     <Fade bottom cascad>
       <br />
-      <AboutDiv>
+      <AboutDiv id="about">
         <AboutStyles nopadding about>
           <div className="about-pic">
             <img

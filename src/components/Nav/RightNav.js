@@ -14,12 +14,14 @@ import {
 } from "../Header/HeaderStyles";
 
 const Ul = styled.ul`
-  list-style: none;
-  display: flex;
-  flex-flow: row nowrap;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+  }
 
   li {
-    padding: 18px 10px;
+  padding: 18px 10px;
   }
 
   @media (max-width: 768px) {
@@ -44,46 +46,40 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <Container>
-        <Div2>
-          <li>
-            <Link href="#projects">
-              <NavLink>Projects</NavLink>
-            </Link>
-          </li>
-          <li>
-            <Link href="#experience">
-              <NavLink>Experience</NavLink>
-            </Link>
-          </li>
-          <li>
-            <Link href="#tech">
-              <NavLink>Technologies</NavLink>
-            </Link>
-          </li>
-          <li>
-            <Link href="#about">
-              <NavLink>About</NavLink>
-            </Link>
-          </li>
-        </Div2>
-        <Div3>
-          <SocialIconGit
-            onClick={() =>
-              window.open("https://github.com/btims512/", "_blank")
-            }
-          >
-            <AiFillGithub size="4rem" />
-          </SocialIconGit>
-          <SocialIconLinkedIn
-            onClick={() =>
-              window.open("https://www.linkedin.com/in/benjamintims/", "_blank")
-            }
-          >
-            <AiFillLinkedin size="4rem" />
-          </SocialIconLinkedIn>
-        </Div3>
-      </Container>
+        <li>
+          <Link href="#projects">
+            <NavLink>Projects</NavLink>
+          </Link>
+        </li>
+        <li>
+          <Link href="#experience">
+            <NavLink>Experience</NavLink>
+          </Link>
+        </li>
+        <li>
+          <Link href="#tech">
+            <NavLink>Technologies</NavLink>
+          </Link>
+        </li>
+        <li>
+          <Link href="#about">
+            <NavLink>About</NavLink>
+          </Link>
+        </li>
+      <Div3> 
+        <SocialIconGit
+          onClick={() => window.open("https://github.com/btims512/", "_blank")}
+        >
+          <AiFillGithub size="4rem" />
+        </SocialIconGit>
+        <SocialIconLinkedIn
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/benjamintims/", "_blank")
+          }
+        >
+          <AiFillLinkedin size="4rem" />
+        </SocialIconLinkedIn>
+      </Div3>
     </Ul>
   );
 };
