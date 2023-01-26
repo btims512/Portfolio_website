@@ -35,7 +35,7 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      {/* <li>
+      <li>
         {" "}
         <Link href="#projects">
           <NavLink>Projects</NavLink>
@@ -56,7 +56,7 @@ const RightNav = ({ open }) => {
           <NavLink>About</NavLink>
         </Link>
       </li>
-      <Navbar /> */}
+      <Navbar />
     </Ul>
   );
 };
