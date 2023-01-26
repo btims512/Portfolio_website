@@ -1,24 +1,60 @@
 import styled from "styled-components";
 
 export const BurgerStyles = styled.div`
-  width: 2rem;
-  height: 2rem;
+  width: 44px;
+  height: 34px;
   position: fixed;
   top: 15px;
   right: 20px;
   z-index: 20;
   display: none;
+  margin: 0;
+
+  .pa-fixed-header {
+    background-color: #ffffff !important;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+  }
+
+  .text-black {
+    color: #157293 !important;
+  }
+
+  p {
+    margin: 0;
+  }
+  h1 {
+    margin: 0;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  .header {
+    background-color: pink;
+    margin: 0;
+  }
+
+  .header-bg {
+    background-color: #ada371;
+    margin: 0;
+  }
 
   @media (max-width: 768px) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
+    align-items: flex-end;
+    width: 100%;
   }
 
   div {
-    width: 2rem;
+    width: 32px;
     height: 0.25rem;
-    background-color: ${({ open }) => (open ? "#ccc" : "#333")};
+    background-color: ${({ open }) => (open ? "#ccc" : "#FFFFFF")};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
@@ -39,22 +75,44 @@ export const BurgerStyles = styled.div`
 `;
 
 export const NavStyles = styled.nav`
-  /* width: 100%;
-  height: 55px;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between; */
-
+  margin-left: 22px;
+  margin-top: 11px;
+  height: 100px;
   .logo {
     padding: 15px 0;
+  }
+
+  @media (max-width: 768px) {
+    .mobile {
+      display: none;
+    }
+    .nav-colored {
+      background-color: aqua;
+      width: 100%;
+      align-items: flex-end;
+    }
+
+    .nav-transparent {
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .desktop {
+      display: none;
+    }
   }
 `;
 
 export const NavIconsStyles = styled.nav`
-  background-color: gray;
   display: flex;
   grid-area: 1 / 7 / 2 / 8;
+
+  @media (max-width: 768px) {
+    .mobile {
+      display: none;
+    }
+  }
 `;
 
 export const UlStyles = styled.ul`
@@ -69,9 +127,21 @@ export const UlStyles = styled.ul`
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 
-  li {
-    padding: 18px 10px;
+  ul {
+    gap: 22px;
+    margin: 45px 41px;
+    display: flex;
+    flex-direction: column;
   }
+
+  li {
+    padding: 25px 26px;
+  }
+
+  a {
+    font-size: 28px;
+  }
+
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: #0d2538;
@@ -80,7 +150,7 @@ export const UlStyles = styled.ul`
     top: 0;
     right: 0;
     height: 100vh;
-    width: 300px;
+    width: 265px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     list-style: none;
@@ -88,6 +158,10 @@ export const UlStyles = styled.ul`
 
     li {
       color: #fff;
+    }
+
+    li:nth-child(1) {
+      padding-top: 60px;
     }
   }
 `;
