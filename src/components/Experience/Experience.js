@@ -19,27 +19,25 @@ const Experience = () => {
       {experience.map((item, index) => {
         return (
           <Timeline key={index} index={index} type="button">
-            <Fade bottom cascade>
-              <Timeline className="container">
-                <div class={`${item.side}`}>
-                  <div class="marker"></div>
-                  <div class="timeline-content">
-                    <h3>{`${item.year}`}</h3>
-                    <h3>{`${item.company}`}</h3>
-                    <h4 style={{ color: "#F46737" }}>{`${item.title}`}</h4>
-                    <br />
-                    <ul>
-                      <li>{`${item.responsibilities[0]}`}</li>
-                      <li>{`${item.responsibilities[1]}`}</li>
-                      <li>{`${item.responsibilities[2]}`}</li>
-                      <li>{`${item.responsibilities[3]}`}</li>
-                      <li>{`${item.responsibilities[4]}`}</li>
-                      <li>{`${item.responsibilities[5]}`}</li>
-                    </ul>
-                  </div>
+            <Timeline className="container">
+              <div class={`${item.side}`}>
+                <div class="marker"></div>
+                <div class="timeline-content">
+                  <h3>{`${item.year}`}</h3>
+                  <h3>{`${item.company}`}</h3>
+                  <h4 style={{ color: "#F46737" }}>{`${item.title}`}</h4>
+                  <br />
+                  <ul>
+                    <li>{`${item.responsibilities[0]}`}</li>
+                    <li>{`${item.responsibilities[1]}`}</li>
+                    <li>{`${item.responsibilities[2]}`}</li>
+                    <li>{`${item.responsibilities[3]}`}</li>
+                    <li>{`${item.responsibilities[4]}`}</li>
+                    <li>{`${item.responsibilities[5]}`}</li>
+                  </ul>
                 </div>
-              </Timeline>
-            </Fade>
+              </div>
+            </Timeline>
           </Timeline>
         );
       })}

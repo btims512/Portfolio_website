@@ -10,7 +10,7 @@ export const LeftSection = styled.div`
     text-align: -webkit-center;
   }
   @media ${(props) => props.theme.breakpoints.lg} {
-    margin-top: -60px;
+    /* margin-top: -60px; */
   }
   @media ${(props) => props.theme.breakpoints.md} {
     width: 100%;
@@ -24,5 +24,21 @@ export const LeftSection = styled.div`
     gap: 8px;
     flex-direction: column;
     margin: 0 auto;
+  }
+`;
+
+export const Container = styled.div`
+  #container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-top: 249px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding-top: 250px;
+    margin-bottom: -150px;
   }
 `;

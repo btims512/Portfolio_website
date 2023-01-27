@@ -8,8 +8,8 @@ import { data } from "../../constants/constants";
 
 const Accomplishments = () => (
   <Section nopadding>
-    <Flip bottom>
       <SectionTitle main>Accomplishments</SectionTitle>
+    <Flip bottom>
       <SectionImg nopadding>
         <img
           src="../images/acc_border_certificate.png"

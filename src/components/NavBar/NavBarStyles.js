@@ -22,27 +22,6 @@ export const BurgerStyles = styled.div`
     color: #157293 !important;
   }
 
-  p {
-    margin: 0;
-  }
-  h1 {
-    margin: 0;
-  }
-
-  * {
-    margin: 0;
-  }
-
-  .header {
-    background-color: pink;
-    margin: 0;
-  }
-
-  .header-bg {
-    background-color: #ada371;
-    margin: 0;
-  }
-
   @media (max-width: 768px) {
     display: flex;
     justify-content: space-around;
@@ -75,21 +54,17 @@ export const BurgerStyles = styled.div`
 `;
 
 export const NavStyles = styled.nav`
-  margin-left: 22px;
+  /* margin-left: 22px; */
   margin-top: 11px;
   height: 100px;
+
   .logo {
     padding: 15px 0;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 766px) {
     .mobile {
       display: none;
-    }
-    .nav-colored {
-      background-color: aqua;
-      width: 100%;
-      align-items: flex-end;
     }
 
     .nav-transparent {
@@ -97,7 +72,7 @@ export const NavStyles = styled.nav`
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     .desktop {
       display: none;
     }
@@ -135,7 +110,7 @@ export const UlStyles = styled.ul`
   }
 
   li {
-    padding: 25px 26px;
+    padding: 15px 26px;
   }
 
   a {
@@ -144,13 +119,13 @@ export const UlStyles = styled.ul`
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #0d2538;
+    background-color: #212d45;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0;
     height: 100vh;
-    width: 265px;
+    width: 300px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     list-style: none;

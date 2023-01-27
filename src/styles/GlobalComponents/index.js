@@ -4,7 +4,7 @@ export const Section = styled.section`
   display: ${(props) => (props.grid ? "grid" : "flex")};
   flex-direction: ${(props) => (props.row ? "row" : "column")};
   margin: ${(props) => (props.margin ? "0" : "216px 30px 51px 36px")};
-  padding: ${(props) => (props.nopadding ? "0" : "216px 30px 51px 36px")};
+  padding: ${(props) => (props.nopadding ? "0" : "180px 30px 51px 36px")};
   margin: 0 auto;
   box-sizing: content-box;
   position: relative;
@@ -17,7 +17,8 @@ export const Section = styled.section`
     padding-bottom: 10px;
   }
   @media ${(props) => props.theme.breakpoints.md} {
-    padding: 38px 40px 12px;
+    margin-bottom: 80px;
+    /* display: none; */
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
@@ -26,6 +27,7 @@ export const Section = styled.section`
     max-width: 1040px;
     width: calc(100vw - 32px);
     flex-direction: column;
+    /* margin-top: -22px; */
   }
   @media ${(props) => props.theme.breakpoints.xsm} {
     padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
@@ -352,10 +354,12 @@ export const ButtonBack = styled.div`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 40%;
-    height: 35px;
-    font-size: 14px;
     margin-bottom: ${({ alt }) => (alt ? "0" : "75px")};
+    width: 51%;
+    height: 47px;
+    font-size: 14px;
+    margin-bottom: 75px;
+    border-radius: 20px;
   }
   @media ${(props) => props.theme.breakpoints.xsm} {
     width: 50%;
