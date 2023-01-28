@@ -28,15 +28,7 @@ const About = () => {
               }}
             />{" "}
           </div>
-          <div
-            className="about-text"
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              flexDirection: "row",
-              justifyContent: "space-around",
-            }}
-          >
+          <div className="about-text">
             <AboutSectionTitle>About</AboutSectionTitle>
             <SectionText
               style={{

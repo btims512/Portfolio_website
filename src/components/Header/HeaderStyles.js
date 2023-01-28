@@ -35,21 +35,20 @@ export const Div1 = styled.div`
   }
 `;
 export const Div2 = styled.div`
-  /* display: flex; */
-  /* grid-area: 1 / 1 / 2 / 3;
+  display: flex;
+  grid-area: 1 / 1 / 2 / 3;
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify; */
-  /* padding-left: 21px; */
-  /* justify-content: flex-start; */
-  /* @media ${(props) => props.theme.breakpoints.sm} {
+  -ms-flex-pack: justify;
+  padding-left: 21px;
+  justify-content: flex-start;
+  @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 6;
     margin: -12px 9px 1px -52px;
   }
 
   @media ${(props) => props.theme.breakpoints.xlg} {
-
   }
 
   @media ${(props) => props.theme.breakpoints.lg} {
@@ -64,10 +63,10 @@ export const Div2 = styled.div`
     grid-area: 2 / 1 / 3 / 6;
     margin: 5px 9px 1px 36px;
     gap: 10px;
-  } */
+  }
 `;
 export const Div3 = styled.div`
-  /* grid-area: 1 / 8;
+  grid-area: 1 / 8;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -76,12 +75,12 @@ export const Div3 = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
     grid-area: 1 / 5 / 2 / 6;
-  } */
+  }
 `;
 
 // Navigation Links
 export const NavLink = styled.a`
-  /* font-size: 2rem;
+  font-size: 2rem;
   line-height: 32px;
   color: #fbfbfb;
   transition: 0.4s ease;
@@ -93,7 +92,7 @@ export const NavLink = styled.a`
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.5rem;
     font-size: 16px;
-  } */
+  }
 `;
 
 /// DropDown Contact
@@ -144,24 +143,31 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 // Social Icons
 export const SocialIcons = styled.a`
   transition: 0.3s ease;
-  color: #ffffff;
-  border-radius: 50px;
-  padding: 8px;
+  color: white;
+  border-radius: 50%;
+  padding: 30px 10px 3px 10px;
+  /* padding: 33px 14px 7px 15px; */
   &:hover {
     transform: scale(1.2);
     cursor: pointer;
+  }
+
+  .git-header {
+    padding: 30px 10px 3px 10px;
+    background-color: #dbe1e6;
+    color: black;
   }
 `;
 
 export const SocialIconGit = styled.a`
   transition: 0.3s ease;
   color: white;
-  border-radius: 50px;
-  padding: 8px;
+  border-radius: 50%;
+  padding: 6px 4px 1px 4px;
   &:hover {
     background-color: #dbe1e6;
     color: black;
-    transform: scale(1.2);
+    transform: scale(1.4);
     cursor: pointer;
   }
 `;
@@ -169,12 +175,12 @@ export const SocialIconGit = styled.a`
 export const SocialIconLinkedIn = styled.a`
   transition: 0.3s ease;
   color: white;
-  border-radius: 50px;
-  padding: 8px;
+  border-radius: 50%;
+  padding: 5px 4px 0px 4px;
   &:hover {
     background-color: #dbe1e6;
     color: #0966c2;
-    transform: scale(1.2);
+    transform: scale(1.4);
     cursor: pointer;
   }
 `;

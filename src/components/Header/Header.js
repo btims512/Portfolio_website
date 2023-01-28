@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { DiCssdeck } from "react-icons/di";
 
 import {
   Container,
@@ -37,18 +36,14 @@ const Header = () => (
       </li>
     </Div2>
     <Div3>
-      <SocialIconGit
-        onClick={() => window.open("https://github.com/btims512/", "_blank")}
-      >
-        <AiFillGithub size="4rem" />
-      </SocialIconGit>
-      <SocialIconLinkedIn
-        onClick={() =>
-          window.open("https://www.linkedin.com/in/benjamintims/", "_blank")
-        }
-      >
-        <AiFillLinkedin size="4rem" />
-      </SocialIconLinkedIn>
+      <SocialContainer>
+        <SocialIcons href="https://github.com/btims512">
+          <AiFillGithub size="5rem" />
+        </SocialIcons>
+        <SocialIcons href="https://www.linkedin.com/in/benjamintims/">
+          <AiFillLinkedin size="4rem" />
+        </SocialIcons>
+      </SocialContainer>
     </Div3>
   </Container>
 );

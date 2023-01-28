@@ -82,6 +82,7 @@ export const NavStyles = styled.nav`
 export const NavIconsStyles = styled.nav`
   display: flex;
   grid-area: 1 / 7 / 2 / 8;
+  gap: 25px;
 
   @media (max-width: 768px) {
     .mobile {

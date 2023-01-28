@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 
-import { Timeline } from "./ExperienceStyles";
+import { Timeline, BoxText } from "./ExperienceStyles";
 
 import { Section, SectionTitle } from "../../styles/GlobalComponents";
 import { experience } from "../../constants/constants";
@@ -11,34 +11,56 @@ const Experience = () => {
   return (
     <Section nopadding id="experience">
       <SectionTitle main>Experience</SectionTitle>
-      {/* <SectionDivider /> */}
       <br />
       <br />
       <br />
 
       {experience.map((item, index) => {
         return (
-          <Timeline key={index} index={index} type="button">
-            <Timeline className="container">
-              <div class={`${item.side}`}>
-                <div class="marker"></div>
-                <div class="timeline-content">
-                  <h3>{`${item.year}`}</h3>
-                  <h3>{`${item.company}`}</h3>
-                  <h4 style={{ color: "#F46737" }}>{`${item.title}`}</h4>
-                  <br />
-                  <ul>
-                    <li>{`${item.responsibilities[0]}`}</li>
-                    <li>{`${item.responsibilities[1]}`}</li>
-                    <li>{`${item.responsibilities[2]}`}</li>
-                    <li>{`${item.responsibilities[3]}`}</li>
-                    <li>{`${item.responsibilities[4]}`}</li>
-                    <li>{`${item.responsibilities[5]}`}</li>
-                  </ul>
+          <div>
+            <Timeline key={index} index={index} type="button">
+              <Timeline className="container">
+                <div class={`${item.side}`}>
+                  <div class="marker"></div>
+                  <div class="timeline-content">
+                    <BoxText>
+                      <div className="card">
+                        <div>
+                          <div className="reverse ">
+                            <div
+                              style={{
+                                display: "flex",
+                                justifyContent: "space-between",
+                              }}
+                            >
+                              <h3>{`${item.year}`}</h3>
+                              <h3>{`${item.company}`}</h3>
+                            </div>
+                            <h4
+                              style={{ color: "#F46737" }}
+                            >{`${item.title}`}</h4>
+                            <br />
+                            <ul>
+                              <li>
+                                <span>{`${item.responsibilities[0]}`}</span>
+                              </li>
+                              <li>
+                                <span>{`${item.responsibilities[1]}`}</span>
+                              </li>
+                              <li>
+                                <span>{`${item.responsibilities[2]}`}</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </BoxText>
+                  </div>
                 </div>
-              </div>
+              </Timeline>
             </Timeline>
-          </Timeline>
+            <div className="box"></div>
+          </div>
         );
       })}
     </Section>

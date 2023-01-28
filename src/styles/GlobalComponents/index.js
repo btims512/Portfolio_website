@@ -10,7 +10,6 @@ export const Section = styled.section`
   position: relative;
   overflow: hidden;
   grid-template-columns: 1fr 1fr;
-  /* margin-left: -26px; */
   align-items: ${(props) => (props.about ? "center" : "0")};
   @media ${(props) => props.theme.breakpoints.xlg} {
     margin-left: -3px;
@@ -18,16 +17,13 @@ export const Section = styled.section`
   }
   @media ${(props) => props.theme.breakpoints.md} {
     margin-bottom: 80px;
-    /* display: none; */
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
-    /* padding: 38px 40px 12px; */
     margin-left: 0px;
     max-width: 1040px;
     width: calc(100vw - 32px);
     flex-direction: column;
-    /* margin-top: -22px; */
   }
   @media ${(props) => props.theme.breakpoints.xsm} {
     padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
@@ -36,6 +32,10 @@ export const Section = styled.section`
     width: calc(100vw - 32px);
     flex-direction: column;
   }
+
+  /* #journey {
+    margin-top: 235px;
+  } */
 `;
 
 export const ProjectSection = styled.section`

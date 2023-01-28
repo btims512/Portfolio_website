@@ -7,11 +7,13 @@ import {
 } from "./NavBarStyles";
 import Link from "next/link";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { SocialContainer } from "../Footer/FooterStyles";
 
 import {
   NavLink,
   SocialIconLinkedIn,
   SocialIconGit,
+  SocialIcons,
 } from "../Header/HeaderStyles";
 
 const Burger = () => {
@@ -19,11 +21,7 @@ const Burger = () => {
 
   return (
     <>
-      <BurgerStyles
-        // className={color ? "header header-bg" : "header"}
-        open={open}
-        onClick={() => setOpen(!open)}
-      >
+      <BurgerStyles open={open} onClick={() => setOpen(!open)}>
         <div />
         <div />
         <div />
@@ -87,22 +85,14 @@ const RightNav = ({ open }) => {
       </li>
       <NavIconsStyles className="mobile ">
         <li>
-          <SocialIconGit
-            onClick={() =>
-              window.open("https://github.com/btims512/", "_blank")
-            }
-          >
-            <AiFillGithub size="4rem" />
-          </SocialIconGit>
-        </li>
-        <li>
-          <SocialIconLinkedIn
-            onClick={() =>
-              window.open("https://www.linkedin.com/in/benjamintims/", "_blank")
-            }
-          >
-            <AiFillLinkedin size="4rem" />
-          </SocialIconLinkedIn>
+          <SocialContainer>
+            <SocialIconGit href="https://github.com/btims512">
+              <AiFillGithub size="4rem" />
+            </SocialIconGit>
+            <SocialIconLinkedIn href="https://www.linkedin.com/in/benjamintims/">
+              <AiFillLinkedin size="4rem" />
+            </SocialIconLinkedIn>
+          </SocialContainer>
         </li>
       </NavIconsStyles>
     </UlStyles>

@@ -41,6 +41,13 @@ export const AboutStyles = styled.div`
     width: calc(100vw - 32px);
     flex-direction: column;
   }
+
+  .about-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 `;
 
 // export const AboutSectionTitle = styled.h2`
@@ -89,6 +96,7 @@ export const AboutSectionTitle = styled.h2`
     margin-bottom: 8px;
     /* padding-left: 12px; */
     max-width: 100%;
+    align-self: center;
   }
 `;
 

@@ -64,68 +64,6 @@ export const CarouselItem = styled.div`
   }
 `;
 
-export const BoxText = styled.div`
-  body {
-    background-color: #070e18;
-  }
-
-  .card {
-    width: fit-content;
-    height: fit-content;
-    position: relative;
-    margin: 10px auto;
-    padding: 15px;
-    background-color: #0f1624;
-    border-radius: 4px;
-    box-shadow: rgba(50, 185, 205, 0.25) 0px 30px 100px -20px,
-      rgba(255, 255, 255, 0.3) 0px 30px 20px -30px;
-  }
-  .card::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    border-radius: inherit;
-    left: -4px;
-    top: -4px;
-    width: calc(100% + 4px * 2);
-    height: calc(100% + 4px * 2);
-    background-image: linear-gradient(
-      90deg,
-      #13adc7,
-      #00dbd8,
-      #945dd6,
-      #32b9cd,
-      #b133ff
-    );
-    background-size: 300% 200%;
-    -webkit-animation: spining 3s linear infinite alternate;
-    animation: spining 3s linear infinite alternate;
-    background-repeat: no-repeat;
-  }
-
-  p {
-    text-align: center;
-  }
-
-  @-webkit-keyframes spining {
-    0% {
-      background-position: 0% 0%;
-    }
-    100% {
-      background-position: 100% 100%;
-    }
-  }
-
-  @keyframes spining {
-    0% {
-      background-position: 0% 0%;
-    }
-    100% {
-      background-position: 100% 100%;
-    }
-  }
-`;
-
 export const CarouselItemTitle = styled.h4`
   font-weight: bold;
   font-size: 24px;

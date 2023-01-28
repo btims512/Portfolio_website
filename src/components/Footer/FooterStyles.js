@@ -59,6 +59,33 @@ export const SocialIconsContainer = styled.div`
   }
 `;
 
+export const SocialIconGit = styled.a`
+  transition: 0.3s ease;
+  color: white;
+  border-radius: 50%;
+  padding: 30px 10px 3px 10px;
+  /* padding: 33px 14px 7px 15px; */
+  &:hover {
+    background-color: #dbe1e6;
+    color: black;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+`;
+
+export const SocialIconLinkedIn = styled.a`
+  transition: 0.3s ease;
+  color: white;
+  border-radius: 50%;
+  padding: 33px 14px 7px 15px;
+  &:hover {
+    background-color: #dbe1e6;
+    color: #0966c2;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+`;
+
 export const CompanyContainer = styled.div`
   display: flex;
   align-items: baseline;
@@ -85,6 +112,7 @@ export const Slogan = styled.p`
   font-size: 18px;
   line-height: 30px;
   padding: 1rem;
+  margin-left: -11px;
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 16px;
@@ -102,11 +130,16 @@ export const Slogan = styled.p`
 export const SocialContainer = styled.div`
   display: flex;
   align-items: center;
+  gap: 25px;
 
   @media ${(props) => props.theme.breakpoints.md} {
     justify-content: center;
     padding-right: 16px;
     flex-wrap: wrap;
+  }
+
+  .header-icons {
+    gap: 25px;
   }
 `;
 
