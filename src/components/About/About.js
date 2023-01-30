@@ -16,21 +16,12 @@ const About = () => {
       <AboutDiv id="about">
         <AboutStyles nopadding about>
           <div className="about-pic">
-            <img
-              className="aboutme"
-              id="profilePic"
-              src="../images/profile-pic-2.png"
-              style={{
-                width: "300px",
-                maxWidth: "100%",
-                height: "400",
-                borderRadius: "10px",
-              }}
-            />{" "}
+            <img id="profile-pic" src="../images/profile-pic-2.png" />{" "}
           </div>
           <div className="about-text">
             <AboutSectionTitle>About</AboutSectionTitle>
             <SectionText
+              className=""
               style={{
                 MaxWidth: "625px",
                 fontSize: "16px",
@@ -39,7 +30,7 @@ const About = () => {
                 lineHeight: "16px",
               }}
             >
-              <AboutText style={{ width: "400px" }}>
+              <AboutText style={{ width: "400px", inlineSize: "fit-content" }}>
                 <p>
                   {" "}
                   <br />

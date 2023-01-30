@@ -121,7 +121,7 @@ export const experience = [
     side: "timeline-block timeline-block-left card2",
   },
   {
-    title: "Web Developer Consultant",
+    title: "Apple Technical Trainer",
     company: "Apple",
     year: "2014",
     responsibilities: [

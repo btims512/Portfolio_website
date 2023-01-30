@@ -33,9 +33,9 @@ export const Section = styled.section`
     flex-direction: column;
   }
 
-  /* #journey {
-    margin-top: 235px;
-  } */
+  #journey {
+    height: 285px;
+  }
 `;
 
 export const ProjectSection = styled.section`

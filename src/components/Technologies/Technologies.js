@@ -23,7 +23,7 @@ const Technologies = () => (
       <List>
         <ListItem>
           <DiReact size="72px" color="#F46737" />
-          <ListContainer>
+          <ListContainer className="frontend">
             <ListTitle>Front-End</ListTitle>
             <ListParagraph>
               React, Javascript, Dart, <br />
@@ -31,7 +31,7 @@ const Technologies = () => (
             </ListParagraph>
           </ListContainer>
         </ListItem>
-        <ListItem>
+        <ListItem className="backend">
           <DiFirebase size="72px" color="#F46737"  />
           <ListContainer>
             <ListTitle>Back-End</ListTitle>
@@ -41,8 +41,8 @@ const Technologies = () => (
             </ListParagraph>
           </ListContainer>
         </ListItem>
-        <ListItem>
-          <DiNodejsSmall size="72px" color="#F46737" />
+        <ListItem className="frameworks">
+          <DiNodejsSmall size="75px" color="#F46737" />
           <ListContainer>
             <ListTitle>Frameworks & Libraries</ListTitle>
             <ListParagraph>

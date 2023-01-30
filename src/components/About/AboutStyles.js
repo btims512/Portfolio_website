@@ -9,6 +9,30 @@ export const AboutDiv = styled.div`
   justify-content: center;
   width: 100%;
   height: fit-content;
+
+  #profile-pic {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    position: inherit;
+    /* display: none; */
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+      width: 200px;
+      max-width: 100%;
+      border-radius: 10px;
+      position: absolute;
+      margin: -58px 42px 139px -91px;
+    }
+
+    @media ${(props) => props.theme.breakpoints.md} {
+      margin-bottom: 136px;
+    }
+
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    /* height: 500px; */
+  }
 `;
 
 export const AboutStyles = styled.div`
@@ -47,6 +71,11 @@ export const AboutStyles = styled.div`
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+      font-size: 14px;
+      padding-top: 112px;
+    }
   }
 `;
 
@@ -77,27 +106,31 @@ export const AboutSectionTitle = styled.h2`
   padding: ${(props) => (props.main ? "18px 34px;" : "0")};
 
   @media ${(props) => props.theme.breakpoints.xlg} {
-    padding: 0px 0px 30px 8px;
+    padding: 0px 0px 20px 8px;
   }
   @media ${(props) => props.theme.breakpoints.lg} {
-    padding: 25px 35px 32px;
+    padding: 0px 0px 20px 8px;
   }
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: ${(props) => (props.main ? "32px" : "48px")};
+    font-size: ${(props) => (props.main ? "32px" : "32px")};
     line-height: ${(props) => (props.main ? "56px" : "48px")};
-    margin-bottom: 12px;
-    padding: ${(props) => (props.main ? "40px 23px 12px" : "0")};
+    padding: ${(props) => (props.main ? "0" : "0px 0px 20px 8px;")};
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 32px;
+    font-size: 24px;
     line-height: 40px;
     font-size: ${(props) => (props.main ? "22px" : "32px")};
     line-height: ${(props) => (props.main ? "32px" : "40px")};
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
     /* padding-left: 12px; */
     max-width: 100%;
     align-self: center;
   }
 `;
 
-export const AboutText = styled.h5``;
+export const AboutText = styled.h5`
+    width: fit-content;
+  p {
+    font-size: 14px;
+  }
+`;

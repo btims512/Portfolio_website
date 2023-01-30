@@ -22,7 +22,7 @@ export const ProfilePicStyles = styled.div`
     margin-top: -60px;
 
     #header-profile-pic {
-      margin: -15px 0px 0px 0px;
+      margin: 40px 0px 0px 0px;
     }
   }
   /* max-width: 1024px */
