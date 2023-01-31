@@ -19,7 +19,7 @@ const Experience = () => {
         {experience.map((item, index) => {
           return (
             <div>
-              <Timeline key={index} index={index} type="button">
+              <Timeline key={index} index={index}>
                 <Timeline className="container">
                   <div class={`${item.side}`}>
                     <div class="marker"></div>

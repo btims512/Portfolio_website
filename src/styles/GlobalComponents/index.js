@@ -16,7 +16,7 @@ export const Section = styled.section`
     padding-bottom: 10px;
 
     #journey {
-      height: 348px;
+      height: 195px;
       margin-top: 55px;
     }
   }
