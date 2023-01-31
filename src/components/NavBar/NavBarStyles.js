@@ -25,22 +25,28 @@ export const BurgerStyles = styled.div`
 
   @media (max-width: 768px) {
     display: flex;
-    justify-content: space-around;
-    flex-flow: column nowrap;
-    align-items: flex-end;
-    width: 100%;
+    justify-content: space-evenly;
+    -webkit-flex-flow: column nowrap;
+    align-items: center;
+    border-radius: 15px;
+    height: 6vh;
+    width: 14vw;
+    background: 100% border-box #fff;
+    align-content: space-between;
+    margin-top: -7px;
   }
 
   div {
     width: 32px;
     height: 0.25rem;
-    background-color: ${({ open }) => (open ? "#ccc" : "#FFFFFF")};
+    background-color: ${({ open }) => (open ? "#0f1624" : "#0f1624")};
     border-radius: 10px;
-    transform-origin: 1px;
+    transform-origin: -1.5px;
     transition: all 0.3s linear;
 
     &:nth-child(1) {
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+      margin-left: ${({ open }) => (open ? "8px" : "0px")};
     }
 
     &:nth-child(2) {
@@ -50,6 +56,7 @@ export const BurgerStyles = styled.div`
 
     &:nth-child(3) {
       transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+      margin-left: ${({ open }) => (open ? "8px" : "0px")};
     }
   }
 `;
@@ -83,7 +90,7 @@ export const NavStyles = styled.nav`
 export const NavIconsStyles = styled.nav`
   display: flex;
   grid-area: 1 / 7 / 2 / 8;
-  gap: 25px;
+  gap: 10px;
 
   @media (max-width: 768px) {
     .mobile {

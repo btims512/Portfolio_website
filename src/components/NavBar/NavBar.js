@@ -17,7 +17,6 @@ import {
 
 const Burger = () => {
   const [open, setOpen] = useState(false);
-
   let menuRef = useRef();
 
   useEffect(() => {
@@ -61,10 +60,10 @@ const Burger = () => {
           <li>
             <SocialContainer>
               <SocialIconGit href="https://github.com/btims512">
-                <AiFillGithub size="4rem" />
+                <AiFillGithub size="5rem" />
               </SocialIconGit>
               <SocialIconLinkedIn href="https://www.linkedin.com/in/benjamintims/">
-                <AiFillLinkedin size="4rem" />
+                <AiFillLinkedin size="5rem" />
               </SocialIconLinkedIn>
             </SocialContainer>
           </li>
@@ -84,7 +83,7 @@ const NavBar = () => {
               window.open("https://github.com/btims512/", "_blank")
             }
           >
-            <AiFillGithub size="4rem" />
+            <AiFillGithub size="5rem" />
           </SocialIconGit>
         </li>
         <li>
@@ -93,7 +92,7 @@ const NavBar = () => {
               window.open("https://www.linkedin.com/in/benjamintims/", "_blank")
             }
           >
-            <AiFillLinkedin size="4rem" />
+            <AiFillLinkedin size="5rem" />
           </SocialIconLinkedIn>
         </li>
       </NavIconsStyles>

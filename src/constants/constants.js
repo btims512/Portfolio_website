@@ -2,11 +2,12 @@ export const projects = [
   {
     title: "Apple",
     description:
-      "Develop and maintain accessible, responsive, functional and rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks.",
+      "Develop and maintain accessible, responsive, functional and rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks. Code and sources are internal due to NDA.",
+
     image: "/images/apple-logo.png",
     tags: ["JavaScript", "Drupal", "HTML", "CSS"],
-    source: "https://finddatgif.herokuapp.com/",
-    visit: "https://github.com/btims512/projects",
+    source: "#",
+    visit: "#",
     id: 2,
   },
   {

@@ -163,7 +163,7 @@ export const SocialIconGit = styled.a`
   transition: 0.3s ease;
   color: white;
   border-radius: 50%;
-  padding: 6px 4px 1px 4px;
+  padding: 4px 4px 0px 4px;
   &:hover {
     background-color: #dbe1e6;
     color: black;
@@ -176,7 +176,7 @@ export const SocialIconLinkedIn = styled.a`
   transition: 0.3s ease;
   color: white;
   border-radius: 50%;
-  padding: 5px 4px 0px 4px;
+  padding: 4px 4px 0px 4px;
   &:hover {
     background-color: #dbe1e6;
     color: #0966c2;

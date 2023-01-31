@@ -46,7 +46,7 @@ export const Animation = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-right: 0;
     position: absolute;
-    z-index: -2;
+    z-index: -1;
     width: 349px;
     margin-left: 0;
     margin: -44px;
