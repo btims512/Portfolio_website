@@ -14,6 +14,11 @@ export const Section = styled.section`
   @media ${(props) => props.theme.breakpoints.xlg} {
     margin-left: -3px;
     padding-bottom: 10px;
+
+    #journey {
+      height: 348px;
+      margin-top: 55px;
+    }
   }
   @media ${(props) => props.theme.breakpoints.md} {
     margin-bottom: 80px;
@@ -24,6 +29,12 @@ export const Section = styled.section`
     max-width: 1040px;
     width: calc(100vw - 32px);
     flex-direction: column;
+    margin-top: 80px;
+
+    #journey {
+      height: 220px;
+      margin-top: 0px;
+    }
   }
   @media ${(props) => props.theme.breakpoints.xsm} {
     padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
@@ -32,46 +43,9 @@ export const Section = styled.section`
     width: calc(100vw - 32px);
     flex-direction: column;
   }
-
-  #journey {
-    height: 225px;
-  }
 `;
 
-export const ProjectSection = styled.section`
-  /* display: ${(props) => (props.grid ? "grid" : "flex")};
-  flex-direction: ${(props) => (props.row ? "row" : "column")};
-  padding: ${(props) => (props.nopadding ? "0" : "216px 30px 51px 36px")};
-  margin: 0 auto;
-  box-sizing: content-box;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: -160px;
-  grid-template-columns: 1fr 1fr;
-
-  @media ${(props) => props.theme.breakpoints.xlg} {
-    margin-left: -3px;
-  }
-  @media ${(props) => props.theme.breakpoints.md} {
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
-    max-width: 1040px;
-    margin-bottom: 0px;
-    padding: 0px 19px 16px;
-    width: calc(100vw - 32px);
-    flex-direction: column;
-  }
-
-  @media ${(props) => props.theme.breakpoints.xsm} {
-    padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
-    max-width: 1040px;
-    min-inline-size: min-content;
-    width: calc(100vw - 32px);
-    flex-direction: column;
-  } */
-`;
+export const ProjectSection = styled.section``;
 
 export const SectionTitleH1 = styled.h1`
   font-weight: 800;
@@ -215,6 +189,7 @@ export const SectionText = styled.p`
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 16px;
+    text-align: center;
   }
 `;
 

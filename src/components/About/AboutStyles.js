@@ -8,7 +8,7 @@ export const AboutDiv = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  height: fit-content;
+  margin-bottom: -75px;
 
   #profile-pic {
     width: 300px;
