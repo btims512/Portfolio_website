@@ -15,7 +15,6 @@ export const AboutDiv = styled.div`
     max-width: 100%;
     border-radius: 10px;
     position: inherit;
-    /* display: none; */
 
     @media ${(props) => props.theme.breakpoints.sm} {
       width: 200px;
@@ -28,7 +27,6 @@ export const AboutDiv = styled.div`
     @media ${(props) => props.theme.breakpoints.md} {
       margin-bottom: 136px;
     }
-
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     /* height: 500px; */
@@ -119,17 +117,15 @@ export const AboutSectionTitle = styled.h2`
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 24px;
     line-height: 40px;
-    font-size: ${(props) => (props.main ? "22px" : "32px")};
+    font-size: 22px;
     line-height: ${(props) => (props.main ? "32px" : "40px")};
-    /* margin-bottom: 8px; */
-    /* padding-left: 12px; */
     max-width: 100%;
     align-self: center;
   }
 `;
 
 export const AboutText = styled.h5`
-    width: fit-content;
+  width: fit-content;
   p {
     font-size: 14px;
   }

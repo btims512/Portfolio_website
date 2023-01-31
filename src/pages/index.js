@@ -12,10 +12,7 @@ import { Section, BigBreak } from "../styles/GlobalComponents";
 const Home = () => {
   return (
     <Layout>
-      {/* <Section grid> */}
-        <Hero />
-        {/* <BgAnimation /> */}
-      {/* </Section> */}
+      <Hero />
       <Projects />
       <Experience />
       <Technologies />
