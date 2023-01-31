@@ -2,14 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
-import {
-  Container,
-  Div2,
-  Div3,
-  NavLink,
-  SocialIconLinkedIn,
-  SocialIconGit,
-} from "./HeaderStyles";
+import { Container, Div2, Div3, NavLink } from "./HeaderStyles";
 
 const Header = () => (
   <Container>

@@ -15,38 +15,27 @@ import {
   SocialIconGit,
 } from "../Header/HeaderStyles";
 
-let useClickOutside = (handler) => {
-  let domNode = useRef();
-  useEffect(() => {
-    let maybeHandler = (event) => {
-      if (!domNode.current?.contains(event.target)) {
-        handler();
-      }
-    };
-    document.addEventListener("mousedown", handler);
-
-    return () => {
-      document.removeEventListener("mousedown", handler);
-    };
-  });
-
-  return domNode;
-};
-
 const Burger = () => {
   const [open, setOpen] = useState(false);
-  let domNode = useClickOutside(() => {
-    setOpen(false);
+
+  let menuRef = useRef();
+
+  useEffect(() => {
+    document.addEventListener("mousedown", (event) => {
+      if (!menuRef.current?.contains(event.target)) {
+        setOpen(false);
+      }
+    });
   });
 
   return (
     <>
-      <BurgerStyles open={open} onClick={() => setOpen(!open)}>
+      <BurgerStyles ref={menuRef} open={open} onClick={() => setOpen(!open)}>
         <div />
         <div />
         <div />
       </BurgerStyles>
-      <UlStyles open={open} ref={domNode}>
+      <UlStyles open={open}>
         <li>
           {" "}
           <Link href="#projects">
@@ -113,44 +102,44 @@ const NavBar = () => {
   );
 };
 
-// const RightNav = ({ open }) => {
-//   return (
-//     <UlStyles open={open}>
-//       <li>
-//         {" "}
-//         <Link href="#projects">
-//           <NavLink>Projects</NavLink>
-//         </Link>
-//       </li>
-//       <li>
-//         <Link href="#experience">
-//           <NavLink>Experience</NavLink>
-//         </Link>
-//       </li>
-//       <li>
-//         <Link href="#tech">
-//           <NavLink>Technologies</NavLink>
-//         </Link>{" "}
-//       </li>
-//       <li>
-//         <Link href="#about">
-//           <NavLink>About</NavLink>
-//         </Link>
-//       </li>
-//       <NavIconsStyles className="mobile ">
-//         <li>
-//           <SocialContainer>
-//             <SocialIconGit href="https://github.com/btims512">
-//               <AiFillGithub size="4rem" />
-//             </SocialIconGit>
-//             <SocialIconLinkedIn href="https://www.linkedin.com/in/benjamintims/">
-//               <AiFillLinkedin size="4rem" />
-//             </SocialIconLinkedIn>
-//           </SocialContainer>
-//         </li>
-//       </NavIconsStyles>
-//     </UlStyles>
-//   );
-// };
+const RightNav = ({ open }) => {
+  return (
+    <UlStyles open={open}>
+      <li>
+        {" "}
+        <Link href="#projects">
+          <NavLink>Projects</NavLink>
+        </Link>
+      </li>
+      <li>
+        <Link href="#experience">
+          <NavLink>Experience</NavLink>
+        </Link>
+      </li>
+      <li>
+        <Link href="#tech">
+          <NavLink>Technologies</NavLink>
+        </Link>{" "}
+      </li>
+      <li>
+        <Link href="#about">
+          <NavLink>About</NavLink>
+        </Link>
+      </li>
+      <NavIconsStyles className="mobile ">
+        <li>
+          <SocialContainer>
+            <SocialIconGit href="https://github.com/btims512">
+              <AiFillGithub size="4rem" />
+            </SocialIconGit>
+            <SocialIconLinkedIn href="https://www.linkedin.com/in/benjamintims/">
+              <AiFillLinkedin size="4rem" />
+            </SocialIconLinkedIn>
+          </SocialContainer>
+        </li>
+      </NavIconsStyles>
+    </UlStyles>
+  );
+};
 
 export default NavBar;
