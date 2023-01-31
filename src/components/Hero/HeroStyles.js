@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
 export const LeftSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 80%;
     display: flex;
@@ -10,7 +14,6 @@ export const LeftSection = styled.div`
     text-align: -webkit-center;
   }
   @media ${(props) => props.theme.breakpoints.lg} {
-    /* margin-top: -60px; */
   }
   @media ${(props) => props.theme.breakpoints.md} {
     width: 100%;
@@ -28,17 +31,77 @@ export const LeftSection = styled.div`
 `;
 
 export const Container = styled.div`
-  #container {
+  #mobile-profile-pic {
+    display: none;
+  }
+
+  .mobile-pic-div {
+    display: none;
+  }
+
+  .hero-body {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, minmax(250px, 2fr));
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    padding-top: 249px;
+    margin: 25px;
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+      grid-template-columns: none;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+    }
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+      margin: 0;
+
+      .mobile-pic-div {
+        display: block;
+      }
+
+      .hero-body-mobile {
+        
+      }
+    }
+  }
+
+  .right-section {
+    grid-area: 1 / 2 / 2 / 3;
+    width: auto;
+  }
+
+  .div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    width: fit-content;
+  }
+
+  .profile-pic-container {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    z-index: 1;
+    margin-left: 38px;
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+      display: none;
+
+      .right-section {
+        display: none;
+      }
+    }
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding-top: 250px;
-    margin-bottom: -150px;
+    /* margin: 185px 0px 0px 20px; */
+    #mobile-profile-pic {
+      display: block;
+      width: 275px;
+    }
+
+    .right-section {
+      display: none;
+    }
   }
 `;

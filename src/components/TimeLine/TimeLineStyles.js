@@ -134,7 +134,6 @@ export const CarouselButtons = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     visibility: visible;
-    margin-bottom: 48px;
   }
 `;
 

@@ -22,7 +22,7 @@ export const HeroTextStyles = styled.div`
     flex-flow: row wrap;
     position: relative;
     top: 50%;
-    width: 30em;
+    width: fit-content;
     max-width: 100vw;
     margin: 10 auto;
     border-right: 2px solid rgba(255, 255, 255, 0.75);

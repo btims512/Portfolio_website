@@ -66,7 +66,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <Section nopadding>
+    <Section nopadding className="journey-section">
       <div id="journey">
         <SectionTitle main>Journey</SectionTitle>
         <br />
@@ -127,7 +127,6 @@ const Timeline = () => {
             </>
           </CarouselContainer>
         </div>
-
         <CarouselButtons>
           {TimeLineData.map((item, index) => {
             return (

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BurgerStyles = styled.div`
   width: 44px;
   height: 34px;
-  position: fixed;
+  position: absolute;
   top: 15px;
   right: 20px;
   z-index: 20;

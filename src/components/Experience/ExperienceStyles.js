@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin-left: 25px;
+  }
+  .container:before {
+    left: 30.8%;
+  }
+`;
+
 export const Timeline = styled.tbody`
   * {
     -webkit-box-sizing: border-box;
@@ -48,7 +57,7 @@ export const Timeline = styled.tbody`
   .container:before {
     content: "";
     position: absolute;
-    top: 0;
+    /* top: 0; */
     left: 49.8%;
     width: 4px;
     height: 100%;
@@ -128,7 +137,7 @@ export const Timeline = styled.tbody`
 
   @media screen and (max-width: 768px) {
     .container:before {
-      left: 8px;
+      left: 35px;
       width: 4px;
     }
     .timeline-block {
@@ -159,9 +168,13 @@ export const BoxText = styled.div`
     margin: 10px auto;
     padding: 40px 40px 20px 40px;
     background-color: #0e131f;
-    border-radius: 0px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
     box-shadow: rgb(50 185 205 / 25%) 0px 30px 100px -85px,
       rgb(255 255 255 / 30%) 0px 30px 20px -32px;
+
+    @media screen and (max-width: 768px) {
+      border-radius: 0px 50px 50px 50px;
+    }
   }
 
   .timeline-block timeline-block-left {

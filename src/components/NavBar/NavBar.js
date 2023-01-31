@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   BurgerStyles,
   NavStyles,
@@ -13,7 +13,6 @@ import {
   NavLink,
   SocialIconLinkedIn,
   SocialIconGit,
-  SocialIcons,
 } from "../Header/HeaderStyles";
 
 const Burger = () => {

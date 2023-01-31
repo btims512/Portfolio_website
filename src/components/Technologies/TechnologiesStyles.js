@@ -32,12 +32,12 @@ export const MainImage = styled.img`
 `;
 
 export const List = styled.ul`
-  list-style-type: none;
+  /* list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin: 3rem 0;
-  justify-items: center;
+  justify-items: center; */
 
   @media ${(props) => props.theme.breakpoints.lg} {
     margin: 64px 0;
@@ -52,6 +52,10 @@ export const List = styled.ul`
     display: flex;
     flex-direction: column;
     margin: 32px 0;
+  }
+
+  li {
+    /* display: block; */
   }
 `;
 

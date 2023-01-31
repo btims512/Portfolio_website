@@ -34,17 +34,15 @@ export const Section = styled.section`
   }
 
   #journey {
-    height: 285px;
+    height: 225px;
   }
 `;
 
 export const ProjectSection = styled.section`
-  display: ${(props) => (props.grid ? "grid" : "flex")};
+  /* display: ${(props) => (props.grid ? "grid" : "flex")};
   flex-direction: ${(props) => (props.row ? "row" : "column")};
   padding: ${(props) => (props.nopadding ? "0" : "216px 30px 51px 36px")};
   margin: 0 auto;
-  /* padding-right: 285px; */
-  /* max-width: 1040px; */
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
@@ -55,7 +53,6 @@ export const ProjectSection = styled.section`
     margin-left: -3px;
   }
   @media ${(props) => props.theme.breakpoints.md} {
-    /* padding: 38px 40px 12px; */
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -73,7 +70,7 @@ export const ProjectSection = styled.section`
     min-inline-size: min-content;
     width: calc(100vw - 32px);
     flex-direction: column;
-  }
+  } */
 `;
 
 export const SectionTitleH1 = styled.h1`
@@ -105,7 +102,7 @@ export const SectionTitleH1 = styled.h1`
     font-size: ${(props) => (props.main ? "38px" : "32px")};
     line-height: ${(props) => (props.main ? "32px" : "40px")};
     margin-bottom: 0px;
-    padding: ${(props) => (props.main ? "16px 0 0px" : "0")};
+    padding: ${(props) => (props.main ? "16px 0px 16px 0px;" : "0")};
     max-width: 100%;
   }
 `;
@@ -356,9 +353,7 @@ export const ButtonBack = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-bottom: ${({ alt }) => (alt ? "0" : "75px")};
     width: 51%;
-    height: 47px;
-    font-size: 14px;
-    margin-bottom: 75px;
+    width: fit-content;
     border-radius: 20px;
   }
   @media ${(props) => props.theme.breakpoints.xsm} {
