@@ -1,6 +1,5 @@
 import React from "react";
 import Roll from "react-reveal/Roll";
-import Slide from "react-reveal/Slide";
 
 import {
   BlogCard,
@@ -17,10 +16,7 @@ import {
   StackTitle,
   TitleHeader,
 } from "./ProjectsStyles";
-import {
-  ProjectSection,
-  SectionTitle
-} from "../../styles/GlobalComponents";
+import { ProjectSection, SectionTitle } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 
 const Projects = () => (
@@ -31,14 +27,12 @@ const Projects = () => (
     <GridContainer>
       {projects.map(
         ({ id, image, title, description, tags, source, visit }) => (
-          <Slide left>
+          <div>
             <BlogCard key={id}>
               <TitleContent>
-              <HeaderThree title>
-              <Img src={image} />
-              <TitleHeader>
-                {title}
-              </TitleHeader>
+                <HeaderThree title>
+                  <Img src={image} />
+                  <TitleHeader>{title}</TitleHeader>
                 </HeaderThree>
                 <Hr />
               </TitleContent>
@@ -46,18 +40,22 @@ const Projects = () => (
               <div>
                 <br />
                 <TagList>
-                <StackTitle>Stack: &nbsp; &nbsp;</StackTitle>
+                  <StackTitle>Stack: &nbsp; &nbsp;</StackTitle>
                   {tags.map((tag, i) => (
                     <Tag key={i}>{tag} &nbsp;</Tag>
                   ))}
                 </TagList>
               </div>
               <UtilityList>
-                <ExternalLinks href={visit}>Code</ExternalLinks>
-                <ExternalLinks href={source}>Visit</ExternalLinks>
+                <ExternalLinks target={"_blank"} href={visit}>
+                  Code
+                </ExternalLinks>
+                <ExternalLinks target={"_blank"} href={source}>
+                  Visit
+                </ExternalLinks>
               </UtilityList>
             </BlogCard>
-          </Slide>
+          </div>
         )
       )}
     </GridContainer>

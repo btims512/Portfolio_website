@@ -1,17 +1,5 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-
-  .pic-container {
-    display: flex;
-  } */
-`;
-
 export const ProfilePicStyles = styled.div`
   max-width: 400px;
   min-width: 190px;
@@ -31,25 +19,28 @@ export const Animation = styled.div`
   margin-right: 105px;
 
   @media ${(props) => props.theme.breakpoints.xlg} {
-    margin-left: 54px;
+    margin-left: -72px;
+    margin-right: 50px;
   }
 
   @media ${(props) => props.theme.breakpoints.lg} {
-    margin-left: 54px;
+    margin-left: 2px;
+    margin-right: -12px;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 320px;
+    width: 400px;
     margin-left: 0;
+    margin-left: -15px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-right: 0;
     position: absolute;
     z-index: -1;
-    width: 349px;
+    width: 385px;
     margin-left: 0;
-    margin: -44px;
+    margin: -52px;
   }
 
   height: fit-content;

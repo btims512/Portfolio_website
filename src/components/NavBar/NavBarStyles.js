@@ -28,9 +28,9 @@ export const BurgerStyles = styled.div`
     justify-content: space-evenly;
     -webkit-flex-flow: column nowrap;
     align-items: center;
-    border-radius: 15px;
-    height: 6vh;
-    width: 14vw;
+    border-radius: 5px;
+    height: 60px;
+    width: 60px;
     background: 100% border-box #fff;
     align-content: space-between;
     margin-top: -7px;
@@ -62,7 +62,6 @@ export const BurgerStyles = styled.div`
 `;
 
 export const NavStyles = styled.nav`
-  /* margin-left: 22px; */
   margin-top: 11px;
   height: 100px;
 

@@ -16,7 +16,7 @@ export const Section = styled.section`
     padding-bottom: 10px;
 
     #journey {
-      height: 195px;
+      height: fit-content;
       margin-top: 55px;
     }
   }
@@ -34,6 +34,7 @@ export const Section = styled.section`
     #journey {
       height: 220px;
       margin-top: 0px;
+      margin-left: 20px;
     }
   }
   @media ${(props) => props.theme.breakpoints.xsm} {
@@ -286,6 +287,7 @@ export const SecondaryBtn = styled.button`
 `;
 
 export const SectionImg = styled.div`
+  display: flex;
   width: fit-content;
   padding-left: 0px;
   align-items: feComponentTransfer;

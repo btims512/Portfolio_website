@@ -12,46 +12,47 @@ import {
   ListParagraph,
   ListTitle,
 } from "./TechnologiesStyles";
-import Zoom from "react-reveal/Zoom";
+import Roll from "react-reveal/Roll";
 import Bounce from "react-reveal/Bounce";
 
 const Technologies = () => (
   <Section nopadding id="tech">
-    <Zoom>
-      <br />
+    <br />
+    <Roll left>
       <SectionTitle main>Technologies</SectionTitle>
-      <List>
-        <ListItem>
-          <DiReact size="72px" color="#F46737" />
-          <ListContainer className="frontend">
-            <ListTitle>Front-End</ListTitle>
-            <ListParagraph>
-              React, Javascript, Dart, <br />
-              HTML & CSS
-            </ListParagraph>
-          </ListContainer>
-        </ListItem>
-        <ListItem className="backend">
-          <DiFirebase size="72px" color="#F46737"  />
-          <ListContainer>
-            <ListTitle>Back-End</ListTitle>
-            <ListParagraph>
-              Firebase, Node.js and Databases <br />
-              such as MongoDB, SQL & NoSQL
-            </ListParagraph>
-          </ListContainer>
-        </ListItem>
-        <ListItem className="frameworks">
-          <DiNodejsSmall size="75px" color="#F46737" />
-          <ListContainer>
-            <ListTitle>Frameworks & Libraries</ListTitle>
-            <ListParagraph>
-              React.js, Flutter, Next.js, EJS Bootstrap & Express.js <br />
-            </ListParagraph>
-          </ListContainer>
-        </ListItem>
-      </List>
-    </Zoom>
+    </Roll>
+    <List>
+      <ListItem>
+        <DiReact size="72px" color="#F46737" />
+        <ListContainer className="frontend">
+          <ListTitle>Front-End</ListTitle>
+          <ListParagraph>
+            React, Javascript, Dart, <br />
+            HTML & CSS
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem className="backend">
+        <DiFirebase size="72px" color="#F46737" />
+        <ListContainer>
+          <ListTitle>Back-End</ListTitle>
+          <ListParagraph>
+            Firebase, Node.js and Databases <br />
+            such as MongoDB, SQL & NoSQL
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem className="frameworks">
+        <DiNodejsSmall size="75px" color="#F46737" />
+        <ListContainer>
+          <ListTitle>Frameworks & Libraries</ListTitle>
+          <ListParagraph>
+            React.js, Flutter, Next.js, EJS Bootstrap & Express.js <br />
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+    </List>
+
     <Bounce right></Bounce>
   </Section>
 );

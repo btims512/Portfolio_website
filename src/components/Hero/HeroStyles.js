@@ -5,6 +5,7 @@ export const LeftSection = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  margin-top: -400px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 80%;
@@ -13,6 +14,9 @@ export const LeftSection = styled.div`
     margin: 0 auto;
     text-align: -webkit-center;
   }
+  @media ${(props) => props.theme.breakpoints.xlg} {
+    margin-top: -586px;
+  }
   @media ${(props) => props.theme.breakpoints.lg} {
   }
   @media ${(props) => props.theme.breakpoints.md} {
@@ -20,6 +24,10 @@ export const LeftSection = styled.div`
     display: flex;
     flex-direction: column;
     margin: -75px auto;
+
+    .left-body {
+      margin-top: -345px;
+    }
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
@@ -27,16 +35,22 @@ export const LeftSection = styled.div`
     gap: 8px;
     flex-direction: column;
     margin: 0 auto;
+
+    .left-body {
+      margin-top: 0px;
+    }
   }
 `;
 
 export const Container = styled.div`
   #mobile-profile-pic {
+    display: block;
     display: none;
   }
 
   .mobile-pic-div {
-    display: none;
+    display: block;
+    visibility: hidden;
   }
 
   .hero-body {
@@ -58,10 +72,14 @@ export const Container = styled.div`
 
       .mobile-pic-div {
         display: block;
+        visibility: visible;
+      }
+
+      #mobile-profile-pic {
+        visibility: visible;
       }
 
       .hero-body-mobile {
-        
       }
     }
   }

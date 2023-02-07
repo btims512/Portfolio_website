@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import Fade from "react-reveal/Fade";
-import Slide from "react-reveal/Slide";
+import Roll from "react-reveal/Roll";
 
 import {
   CarouselButton,
@@ -68,7 +67,11 @@ const Timeline = () => {
   return (
     <Section nopadding className="journey-section">
       <div id="journey">
-        <SectionTitle main>Journey</SectionTitle>
+        <Roll left>
+          <SectionTitle main style={{ marginLeft: "-20px" }}>
+            Journey
+          </SectionTitle>
+        </Roll>
         <br />
         <br />
         <div>

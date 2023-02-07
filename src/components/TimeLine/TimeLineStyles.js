@@ -29,6 +29,7 @@ export const CarouselContainer = styled.ul`
     touch-action: pan-x;
     justify-content: initial;
     margin-bottom: 8px;
+    /* padding-left: 4.1rem; */
   }
 `;
 export const CarouselMobileScrollNode = styled.div`

@@ -2,8 +2,7 @@ export const projects = [
   {
     title: "Apple",
     description:
-      "Develop and maintain accessible, responsive, functional and rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks. Code and sources are internal due to NDA.",
-
+      "Develop and maintain accessible, responsive, rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks. Code and sources are internal due to NDA.",
     image: "/images/apple-logo.png",
     tags: ["JavaScript", "Drupal", "HTML", "CSS"],
     source: "#",
@@ -38,6 +37,16 @@ export const projects = [
     tags: ["HTML", "CSS", "Javascript", "MDB"],
     source: "https://oneshots.com",
     visit: "https://github.com/btims512/oneshots_landing_page",
+    id: 2,
+  },
+  {
+    title: "Find My ISS",
+    description:
+      "A web app developed for tracking the International Space Station in real time on a map. This app pings the ship's latitude and longitude, enabling users to monitor it as well as check other important information such as velocity, altitude, and more.",
+    image: "/images/findmyiss-logo.png",
+    tags: ["Javascript", "API", "HTML", "CSS"],
+    source: "http://findmyiss.bentims.com/",
+    visit: "https://github.com/btims512/ISS_tracker",
     id: 2,
   },
   {
@@ -86,7 +95,7 @@ export const projects = [
       "A fun app to find the perfect GIF for how you're feeling, including a trending home page and random section if you're not quiet sure how you're feeling. Developed using Express and consuming Giphy's API via Node-Fetch.",
     image: "/images/gif-logo.png",
     tags: ["JavaScript", "EJS", "Node-Fetch", "CSS"],
-    source: "https://finddatgif.herokuapp.com/",
+    source: "https://find-dat-gif.onrender.com/",
     visit: "https://github.com/btims512/projects",
     id: 2,
   },

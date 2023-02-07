@@ -1,10 +1,6 @@
 import React from "react";
 import Zoom from "react-reveal/Zoom";
-import {
-  ProfilePicStyles,
-  BackgroundAnimationStyles,
-  Animation,
-} from "./BackgroundAnimationStyles";
+import { Animation } from "./BackgroundAnimationStyles";
 
 const BackgroundAnimation = () => (
   <Animation>
