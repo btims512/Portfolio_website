@@ -190,7 +190,7 @@ export const data = [
     text: "Hours of class time",
   },
   {
-    number: 25,
+    number: 30,
     text: "Projects in Github",
   },
 ];

@@ -15,9 +15,10 @@ export const LeftSection = styled.div`
     text-align: -webkit-center;
   }
   @media ${(props) => props.theme.breakpoints.xlg} {
-    margin-top: -586px;
+    margin-top: -550px;
   }
   @media ${(props) => props.theme.breakpoints.lg} {
+    margin-top: -375px;
   }
   @media ${(props) => props.theme.breakpoints.md} {
     width: 100%;
