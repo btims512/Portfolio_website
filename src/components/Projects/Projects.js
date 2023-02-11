@@ -19,13 +19,12 @@ import {
 import { ProjectSection, SectionTitle } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 
-const Projects = () => (
-  <ProjectSection nopadding id="projects">
-    <Roll left>
-      <SectionTitle main>Projects</SectionTitle>
-    </Roll>
-    <GridContainer>
-      {projects.map(
+const withoutApple = projects.splice(0, 1);
+
+export const AppleMap = () => {
+  return (
+    <div>
+      {withoutApple.map(
         ({ id, image, title, description, tags, source, visit }) => (
           <div>
             <BlogCard key={id}>
@@ -47,10 +46,10 @@ const Projects = () => (
                 </TagList>
               </div>
               <UtilityList>
-                <ExternalLinks target={"_blank"} href={visit}>
+                <ExternalLinks target={"_blank"} href={null}>
                   Code
                 </ExternalLinks>
-                <ExternalLinks target={"_blank"} href={source}>
+                <ExternalLinks target={"_blank"} href={null}>
                   Visit
                 </ExternalLinks>
               </UtilityList>
@@ -58,8 +57,59 @@ const Projects = () => (
           </div>
         )
       )}
-    </GridContainer>
-  </ProjectSection>
-);
+    </div>
+  );
+};
+
+console.log(projects);
+
+const Projects = () => {
+  return (
+    <div>
+      <ProjectSection nopadding id="projects">
+        <Roll left>
+          <SectionTitle main>Projects</SectionTitle>
+        </Roll>
+        <GridContainer>
+          {/* Apple blog card */}
+          <AppleMap />
+          {projects.map(
+            ({ id, image, title, description, tags, source, visit }) => (
+              <div>
+                <BlogCard key={id}>
+                  <TitleContent>
+                    <HeaderThree title>
+                      <Img src={image} />
+                      <TitleHeader>{title}</TitleHeader>
+                    </HeaderThree>
+                    <Hr />
+                  </TitleContent>
+                  <CardInfo>{description}</CardInfo>
+                  <div>
+                    <br />
+                    <TagList>
+                      <StackTitle>Stack: &nbsp; &nbsp;</StackTitle>
+                      {tags.map((tag, i) => (
+                        <Tag key={i}>{tag} &nbsp;</Tag>
+                      ))}
+                    </TagList>
+                  </div>
+                  <UtilityList>
+                    <ExternalLinks target={"_blank"} href={visit}>
+                      Code
+                    </ExternalLinks>
+                    <ExternalLinks target={"_blank"} href={source}>
+                      Visit
+                    </ExternalLinks>
+                  </UtilityList>
+                </BlogCard>
+              </div>
+            )
+          )}
+        </GridContainer>
+      </ProjectSection>
+    </div>
+  );
+};
 
 export default Projects;

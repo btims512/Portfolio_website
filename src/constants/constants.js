@@ -1,4 +1,5 @@
 export const projects = [
+
   {
     title: "Apple",
     description:
@@ -7,7 +8,7 @@ export const projects = [
     tags: ["JavaScript", "Drupal", "HTML", "CSS"],
     source: "#",
     visit: "#",
-    id: 2,
+    id: 1,
   },
   {
     title: "Tibles",
@@ -27,7 +28,7 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     source: "https://seussibles.com",
     visit: "https://github.com/btims512/seussibles",
-    id: 2,
+    id: 3,
   },
   {
     title: "OneShots",
@@ -37,7 +38,7 @@ export const projects = [
     tags: ["HTML", "CSS", "Javascript", "MDB"],
     source: "https://oneshots.com",
     visit: "https://github.com/btims512/oneshots_landing_page",
-    id: 2,
+    id: 4,
   },
   {
     title: "Find My ISS",
@@ -47,7 +48,7 @@ export const projects = [
     tags: ["Javascript", "API", "HTML", "CSS"],
     source: "http://findmyiss.bentims.com/",
     visit: "https://github.com/btims512/ISS_tracker",
-    id: 2,
+    id: 5,
   },
   {
     title: "Vinyl Reckoning",
@@ -57,7 +58,7 @@ export const projects = [
     tags: ["React", "JSX", "CSS", "Styled-components"],
     source: "https://vinylreckoning.netlify.app/",
     visit: "https://github.com/btims512/vinyl_reckoning",
-    id: 2,
+    id: 6,
   },
   {
     title: "Instagram Clone",
@@ -67,7 +68,7 @@ export const projects = [
     tags: ["React", "Firebase", "CSS", "styled-components"],
     source: "https://instagram-clone-react-7e7e3.web.app/",
     visit: "https://github.com/btims512/instagram-clone",
-    id: 2,
+    id: 7,
   },
   {
     title: "Exchange Rate$",
@@ -77,7 +78,7 @@ export const projects = [
     tags: ["React", "Node-Fetch"],
     source: "https://exchangeratesrus.netlify.app/",
     visit: "https://github.com/btims512/exchangeRate",
-    id: 2,
+    id: 8,
   },
   {
     title: "Chatthew",
@@ -87,7 +88,7 @@ export const projects = [
     tags: ["React", "JavaScript", "ChatEngine.io"],
     source: "https://chatthew.netlify.app/",
     visit: "https://github.com/btims512/Chat-App",
-    id: 2,
+    id: 9,
   },
   {
     title: "Find Dat Gif!",
@@ -97,7 +98,7 @@ export const projects = [
     tags: ["JavaScript", "EJS", "Node-Fetch", "CSS"],
     source: "https://find-dat-gif.onrender.com/",
     visit: "https://github.com/btims512/projects",
-    id: 2,
+    id: 10,
   },
 ];
 

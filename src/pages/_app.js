@@ -1,10 +1,13 @@
 import Theme from "../styles/theme";
+import { FormspreeProvider } from "@formspree/react";
 
 export default function App({ Component, pageProps }) {
   return (
     <>
       <Theme>
-        <Component {...pageProps} />
+        <FormspreeProvider>
+          <Component {...pageProps} />
+        </FormspreeProvider>
       </Theme>
     </>
   );

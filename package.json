@@ -9,6 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@formspree/react": "^2.4.1",
     "array-move": "^4.0.0",
     "next": "^12.1.0",
     "node-fetch": "^3.1.1",
