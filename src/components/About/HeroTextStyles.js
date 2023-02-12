@@ -33,11 +33,28 @@ export const HeroTextStyles = styled.div`
     transform: translateY(-50%);
   }
 
+  .contact-line {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    position: relative;
+    top: 50%;
+    width: fit-content;
+    max-width: 13.8vw;
+    margin: 10 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 120%;
+    color: hsl(204deg 24% 94% / 50%);
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+  }
+
   /* Animation */
   .anim-typewriter {
     /* flex-shrink: 1; */
     width: fit-content;
-    animation: typewriter 4s steps(44) 1s 1 normal both,
+    animation: typewriter 4s steps(44) 2s 1 normal both,
       blinkTextCursor 800ms steps(44) infinite normal;
   }
   @keyframes typewriter {

@@ -79,9 +79,6 @@ export const Container = styled.div`
       #mobile-profile-pic {
         visibility: visible;
       }
-
-      .hero-body-mobile {
-      }
     }
   }
 
