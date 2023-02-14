@@ -17,7 +17,7 @@ export const Section = styled.section`
 
     #journey {
       height: fit-content;
-      margin-top: 55px;
+      margin-top: 100px;
     }
   }
   @media ${(props) => props.theme.breakpoints.md} {
@@ -33,7 +33,7 @@ export const Section = styled.section`
 
     #journey {
       height: 220px;
-      margin-top: 0px;
+      margin-top: 15px;
       margin-left: 20px;
     }
   }
@@ -122,6 +122,15 @@ export const SectionTitle = styled.h2`
     margin-bottom: 8px;
     padding: ${(props) => (props.main ? "0px 24px 8px" : "0")};
     max-width: 100%;
+  }
+`;
+
+export const SectionTitleJourney = styled.h2`
+  margin-left: 30px;
+  font-size: 32px;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin-left: 0px;
+    font-size: 22px;
   }
 `;
 
@@ -332,6 +341,7 @@ export const ButtonBack = styled.div`
     width: 51%;
     width: fit-content;
     border-radius: 20px;
+    padding: 8px;
   }
   @media ${(props) => props.theme.breakpoints.xsm} {
     width: 50%;

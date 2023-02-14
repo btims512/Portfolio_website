@@ -28,9 +28,9 @@ export const BurgerStyles = styled.div`
     justify-content: space-evenly;
     -webkit-flex-flow: column nowrap;
     align-items: center;
-    border-radius: 5px;
-    height: 60px;
-    width: 60px;
+    border-radius: 8px;
+    height: 55px;
+    width: 55px;
     background: 100% border-box #fff;
     align-content: space-between;
     margin-top: -7px;
@@ -47,6 +47,7 @@ export const BurgerStyles = styled.div`
     &:nth-child(1) {
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
       margin-left: ${({ open }) => (open ? "8px" : "0px")};
+      margin-top: 4px;
     }
 
     &:nth-child(2) {
@@ -57,6 +58,7 @@ export const BurgerStyles = styled.div`
     &:nth-child(3) {
       transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
       margin-left: ${({ open }) => (open ? "8px" : "0px")};
+      margin-bottom: 4px;
     }
   }
 `;
@@ -122,7 +124,7 @@ export const UlStyles = styled.ul`
   }
 
   a {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   @media (max-width: 768px) {

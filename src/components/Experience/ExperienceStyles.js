@@ -137,7 +137,7 @@ export const Timeline = styled.tbody`
 
   @media screen and (max-width: 768px) {
     .container:before {
-      left: 35px;
+      left: 36px;
       width: 4px;
     }
     .timeline-block {

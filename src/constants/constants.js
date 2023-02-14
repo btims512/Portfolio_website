@@ -1,9 +1,8 @@
 export const projects = [
-
   {
     title: "Apple",
     description:
-      "Develop and maintain accessible, responsive, rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks. Code and sources are internal due to NDA.",
+      "Develop and maintain accessible, responsive, rich Apple-quality user experiences for multiple internal Apple sites to allow recruiters to easily access information needed to perform their daily tasks.",
     image: "/images/apple-logo.png",
     tags: ["JavaScript", "Drupal", "HTML", "CSS"],
     source: "#",
@@ -185,6 +184,10 @@ export const data = [
   {
     number: 8,
     text: "Years with Apple",
+  },
+  {
+    number: 2,
+    text: "Years of frontend experience",
   },
   {
     number: 240,

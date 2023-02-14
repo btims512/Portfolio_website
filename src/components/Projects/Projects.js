@@ -24,39 +24,36 @@ const withoutApple = projects.splice(0, 1);
 export const AppleMap = () => {
   return (
     <div>
-      {withoutApple.map(
-        ({ id, image, title, description, tags, source, visit }) => (
-          <div>
-            <BlogCard key={id}>
-              <TitleContent>
-                <HeaderThree title>
-                  <Img src={image} />
-                  <TitleHeader>{title}</TitleHeader>
-                </HeaderThree>
-                <Hr />
-              </TitleContent>
-              <CardInfo>{description}</CardInfo>
+      {withoutApple.map(({ id, image, title, description, tags }) => (
+        <div>
+          <BlogCard key={id}>
+            <TitleContent>
+              <HeaderThree title>
+                <Img src={image} />
+                <TitleHeader>{title}</TitleHeader>
+              </HeaderThree>
+              <Hr />
+            </TitleContent>
+            <CardInfo>{description}</CardInfo>
+            <div>
+              <br />
+              <TagList>
+                <StackTitle>Stack: &nbsp; &nbsp;</StackTitle>
+                {tags.map((tag, i) => (
+                  <Tag key={i}>{tag} &nbsp;</Tag>
+                ))}
+              </TagList>
+            </div>
+            <UtilityList>
               <div>
-                <br />
-                <TagList>
-                  <StackTitle>Stack: &nbsp; &nbsp;</StackTitle>
-                  {tags.map((tag, i) => (
-                    <Tag key={i}>{tag} &nbsp;</Tag>
-                  ))}
-                </TagList>
+                <div className="NDA">
+                  Code & sources are unavailable due to NDA.
+                </div>
               </div>
-              <UtilityList>
-                <ExternalLinks target={"_blank"} href={null}>
-                  Code
-                </ExternalLinks>
-                <ExternalLinks target={"_blank"} href={null}>
-                  Visit
-                </ExternalLinks>
-              </UtilityList>
-            </BlogCard>
-          </div>
-        )
-      )}
+            </UtilityList>
+          </BlogCard>
+        </div>
+      ))}
     </div>
   );
 };

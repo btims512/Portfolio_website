@@ -56,13 +56,29 @@ const Burger = () => {
             <NavLink>About</NavLink>
           </Link>
         </li>
+        <li>
+          <Link href="#contact">
+            <NavLink>Contact</NavLink>
+          </Link>
+        </li>
         <NavIconsStyles className="mobile ">
           <li>
             <SocialContainer>
-              <SocialIconGit href="https://github.com/btims512">
+              <SocialIconGit
+                onClick={() =>
+                  window.open("https://github.com/btims512/", "_blank")
+                }
+              >
                 <AiFillGithub size="5rem" />
               </SocialIconGit>
-              <SocialIconLinkedIn href="https://www.linkedin.com/in/benjamintims/">
+              <SocialIconLinkedIn
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/benjamintims/",
+                    "_blank"
+                  )
+                }
+              >
                 <AiFillLinkedin size="5rem" />
               </SocialIconLinkedIn>
             </SocialContainer>
@@ -77,6 +93,7 @@ const NavBar = () => {
   return (
     <NavStyles>
       <NavIconsStyles className="desktop nav-colored nav-transparent">
+        {/* mobile icons */}
         <li>
           <SocialIconGit
             onClick={() =>
@@ -98,46 +115,6 @@ const NavBar = () => {
       </NavIconsStyles>
       <Burger />
     </NavStyles>
-  );
-};
-
-const RightNav = ({ open }) => {
-  return (
-    <UlStyles open={open}>
-      <li>
-        {" "}
-        <Link href="#projects">
-          <NavLink>Projects</NavLink>
-        </Link>
-      </li>
-      <li>
-        <Link href="#experience">
-          <NavLink>Experience</NavLink>
-        </Link>
-      </li>
-      <li>
-        <Link href="#tech">
-          <NavLink>Technologies</NavLink>
-        </Link>{" "}
-      </li>
-      <li>
-        <Link href="#about">
-          <NavLink>About</NavLink>
-        </Link>
-      </li>
-      <NavIconsStyles className="mobile ">
-        <li>
-          <SocialContainer>
-            <SocialIconGit href="https://github.com/btims512">
-              <AiFillGithub size="4rem" />
-            </SocialIconGit>
-            <SocialIconLinkedIn href="https://www.linkedin.com/in/benjamintims/">
-              <AiFillLinkedin size="4rem" />
-            </SocialIconLinkedIn>
-          </SocialContainer>
-        </li>
-      </NavIconsStyles>
-    </UlStyles>
   );
 };
 

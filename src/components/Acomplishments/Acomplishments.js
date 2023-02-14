@@ -16,6 +16,7 @@ const Accomplishments = () => (
       <SectionTitle main>Accomplishments</SectionTitle>
     </Roll>
 
+  <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
     <SectionImg nopadding>
       <div
         style={{
@@ -28,7 +29,7 @@ const Accomplishments = () => (
         <img
           src="../images/acc_border_certificate.png"
           style={{
-            width: "500px",
+            width: "550px",
             maxWidth: "100%",
             height: "auto",
             boxShadow: "20px 2px 20px rgba(80, 78, 78, 0.5)",
@@ -36,6 +37,16 @@ const Accomplishments = () => (
             filter: "drop-shadow(0px 12px 16px rgba(0, 0, 0, 0.6))",
           }}
         />{" "}
+      </div>
+    </SectionImg>
+    <SectionImg nopadding style={{marginTop: "20px"}}>
+    <div 
+        style={{
+          display: "flex",
+          gap: "20px",
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}>
         <img
           src="../images/5_year_apple.png"
           style={{
@@ -61,6 +72,8 @@ const Accomplishments = () => (
         />{" "}
       </div>
     </SectionImg>
+  </div>
+
 
     <Boxes>
       {data.map((card, index) => (

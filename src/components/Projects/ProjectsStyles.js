@@ -136,6 +136,17 @@ export const UtilityList = styled.ul`
   display: flex;
   justify-content: space-around;
   margin: 2.5rem 0;
+
+  .NDA {
+    color: #c21919;
+    padding: 20px;
+    font-size: small;
+    margin-top: 13px;
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+      padding: 0px;
+    }
+  }
 `;
 
 export const ExternalLinks = styled.a`

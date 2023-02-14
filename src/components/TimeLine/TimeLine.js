@@ -11,13 +11,11 @@ import {
   CarouselItemText,
   CarouselItemTitle,
   CarouselMobileScrollNode,
-  BoxText,
 } from "./TimeLineStyles";
 import {
   Section,
   SectionDivider,
-  SectionText,
-  SectionTitle,
+  SectionTitleJourney,
 } from "../../styles/GlobalComponents";
 import { TimeLineData } from "../../constants/constants";
 
@@ -68,9 +66,7 @@ const Timeline = () => {
     <Section nopadding className="journey-section">
       <div id="journey">
         <Roll left>
-          <SectionTitle main style={{ marginLeft: "-20px" }}>
-            Journey
-          </SectionTitle>
+          <SectionTitleJourney main>Journey</SectionTitleJourney>
         </Roll>
         <br />
         <br />

@@ -2,7 +2,7 @@ import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { ContactFormStyles } from "./ContactFormStyles";
 import { SectionTitle } from "../../styles/GlobalComponents";
-import { HeroTextStyles } from "../About/HeroTextStyles";
+import Roll from "react-reveal/Roll";
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("xyyaedyo");
@@ -16,28 +16,16 @@ function ContactForm() {
     );
   }
 
-  // const scrollpos = typeof window !== "undefined".scrollY;
-  // const wh = typeof window !== "undefined".innerHeight - 50;
-  // const element = document.querySelector(".anim-typewriter");
-
-  // typeof window !==
-  //   "undefined".addEventListener("scroll", function () {
-  //     if (scrollpos > element.offsetTop - wh) {
-  //       element.classList.add("onScroll");
-  //     }
-  //   });
-
   return (
-    <>
-      <SectionTitle main> Contact</SectionTitle>
-      <ContactFormStyles>
+    <ContactFormStyles id="contact">
+      <div className="contact-container">
+        <Roll left>
+          <SectionTitle main>Contact</SectionTitle>
+        </Roll>
         <div className="form-container">
           <form onSubmit={handleSubmit}>
             <div className="title-container">
-              {/* <HeroTextStyles>
-                <p className="contact-line anim-typewriter">Let's Connect</p>
-              </HeroTextStyles> */}
-              <SectionTitle main>Let's Connect</SectionTitle>
+              <SectionTitle main>Let's Connect!</SectionTitle>
             </div>
             <ul>
               <li>
@@ -87,8 +75,8 @@ function ContactForm() {
             </ul>
           </form>
         </div>
-      </ContactFormStyles>
-    </>
+      </div>
+    </ContactFormStyles>
   );
 }
 

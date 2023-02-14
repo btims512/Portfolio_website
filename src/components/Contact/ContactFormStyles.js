@@ -55,10 +55,13 @@ export const ContactFormStyles = styled.div`
     text-align: center;
   }
 
+  .contact-container {
+    margin-top: -30px;
+  }
+
   .form-container {
     display: flex;
     justify-content: center;
-    /* width: 460px; */
     margin: 2.2em auto;
   }
   form {
@@ -79,14 +82,13 @@ export const ContactFormStyles = styled.div`
   input,
   textarea {
     width: 100%;
-    padding: 9px 20px;
+    padding: 10px 10px;
     border: 1px solid #e1e2eb;
     background-color: #ffffff;
     color: #102a43;
     caret-color: #829ab1;
     box-sizing: border-box;
-    font-size: 14px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 29px;
     line-height: 2rem;
     box-shadow: inset 0 2px 4px 0 rgba(206, 209, 224, 0.2);
@@ -102,7 +104,6 @@ export const ContactFormStyles = styled.div`
   }
 
   .title-container > h2 {
-    /* font-size: 28px; */
     padding: 0px;
     margin-top: -15px;
     padding-bottom: 30px;
@@ -122,6 +123,12 @@ export const ContactFormStyles = styled.div`
       linear-gradient(270deg, #00dbd8 0%, #b133ff 100%);
   }
 
+  @media ${(props) => props.theme.breakpoints.xl} {
+    form {
+      height: 500px;
+    }
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     form {
       padding-top: 0;
@@ -131,6 +138,11 @@ export const ContactFormStyles = styled.div`
       overflow: hidden;
       width: 355px;
       padding-bottom: 20px;
+      height: fit-content;
+    }
+
+    .contact-container {
+      margin-top: -50px;
     }
 
     .title-container > h2 {
@@ -140,6 +152,11 @@ export const ContactFormStyles = styled.div`
 
     .required-star {
       font-size: 10px;
+    }
+
+    input,
+    textarea {
+      font-size: 1rem;
     }
 
     input[type="submit"] {
