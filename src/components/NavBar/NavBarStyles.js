@@ -67,6 +67,7 @@ export const NavStyles = styled.nav`
   margin-top: 11px;
   height: 100px;
 
+  
   .logo {
     padding: 15px 0;
   }

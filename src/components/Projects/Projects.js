@@ -58,8 +58,6 @@ export const AppleMap = () => {
   );
 };
 
-console.log(projects);
-
 const Projects = () => {
   return (
     <div>

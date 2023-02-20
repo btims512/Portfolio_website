@@ -36,9 +36,8 @@ const Burger = () => {
       </BurgerStyles>
       <UlStyles open={open}>
         <li>
-          {" "}
           <Link href="#projects">
-            <NavLink>Projects</NavLink>
+            <NavLink className="navbar">Projects</NavLink>
           </Link>
         </li>
         <li>
