@@ -180,7 +180,7 @@ export const SocialIcons = styled.a`
   transition: 0.3s ease;
   color: white;
   border-radius: 50%;
-  padding: 30px 10px 3px 10px;
+  /* padding: 30px 10px 3px 10px; */
   &:hover {
     transform: scale(1.3);
     cursor: pointer;

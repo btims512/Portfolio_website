@@ -1,20 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import { ContactFormStyles } from "./ContactFormStyles";
+import { ContactFormStyles, SuccessCheck } from "./ContactFormStyles";
 import { SectionTitle } from "../../styles/GlobalComponents";
 import Roll from "react-reveal/Roll";
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("xyyaedyo");
-  if (state.succeeded) {
+  const [submitted, setSubmitted] = useState(false);
+
+  if (state.succeeded && submitted) {
     return (
       <ContactFormStyles style={{ display: "flex", justifyContent: "center" }}>
-        <div className="success-message">
-          <p>Thanks for joining!</p>
-        </div>
+        <SuccessCheck>
+          <div className="success-message">
+            <div class="checkmark-container">
+              <svg
+                class="checkmark-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 54 54"
+              >
+                <circle
+                  class="checkmark-svg-circle"
+                  cx="26"
+                  cy="26"
+                  r="25"
+                  fill="none"
+                />
+                <path
+                  class="checkmark-svg-check"
+                  fill="none"
+                  d="M14.1 27.2l7.1 7.2 16.7-16.8"
+                />
+              </svg>
+            </div>
+            <p>
+              Thanks for your message!
+              <br />
+              <br />I will be in touch within 1-2 business days.
+            </p>
+          </div>
+        </SuccessCheck>
       </ContactFormStyles>
     );
   }
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    handleSubmit(e);
+    setSubmitted(true);
+  };
 
   return (
     <ContactFormStyles id="contact">
@@ -23,7 +57,7 @@ function ContactForm() {
           <SectionTitle main>Contact</SectionTitle>
         </Roll>
         <div className="form-container">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={onSubmit}>
             <div className="title-container">
               <SectionTitle main>Let's Connect!</SectionTitle>
             </div>
