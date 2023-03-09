@@ -36,7 +36,8 @@ function ContactForm() {
             <p>
               Thanks for your message!
               <br />
-              <br />I will be in touch within 1-2 business days.
+              <br />
+              I'll be in touch with you very soon!
             </p>
           </div>
         </SuccessCheck>
