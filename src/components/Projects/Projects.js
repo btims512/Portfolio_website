@@ -1,5 +1,5 @@
 import React from "react";
-import Roll from "react-reveal/Roll";
+import Fade from "react-reveal/Fade";
 
 import {
   BlogCard,
@@ -62,9 +62,11 @@ const Projects = () => {
   return (
     <div>
       <ProjectSection nopadding id="projects">
-        <Roll left>
+        <Fade left>
           <SectionTitle main>Projects</SectionTitle>
-        </Roll>
+        </Fade>
+        <div>
+
         <GridContainer>
           {/* Apple blog card */}
           <AppleMap />
@@ -102,6 +104,7 @@ const Projects = () => {
             )
           )}
         </GridContainer>
+        </div>
       </ProjectSection>
     </div>
   );

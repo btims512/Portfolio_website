@@ -3,38 +3,12 @@ import styled from "styled-components";
 export const BurgerStyles = styled.div`
   width: 44px;
   height: 34px;
-  position: --webkit-sticky;
   position: fixed;
   top: 15px;
   right: 20px;
   z-index: 20;
   display: none;
   margin: 0;
-
-  .pa-fixed-header {
-    background-color: #ffffff !important;
-    -webkit-transition: background-color 1s ease-out;
-    -moz-transition: background-color 1s ease-out;
-    -o-transition: background-color 1s ease-out;
-    transition: background-color 1s ease-out;
-  }
-
-  .text-black {
-    color: #157293 !important;
-  }
-
-  @media (max-width: 768px) {
-    display: flex;
-    justify-content: space-evenly;
-    -webkit-flex-flow: column nowrap;
-    align-items: center;
-    border-radius: 8px;
-    height: 55px;
-    width: 55px;
-    background: 100% border-box #fff;
-    align-content: space-between;
-    margin-top: -7px;
-  }
 
   div {
     width: 32px;
@@ -61,13 +35,25 @@ export const BurgerStyles = styled.div`
       margin-bottom: 4px;
     }
   }
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column nowrap;
+    align-items: center;
+    border-radius: 8px;
+    height: 55px;
+    width: 55px;
+    background: 100% border-box #fff;
+    align-content: space-between;
+    margin-top: -7px;
+  }
 `;
 
 export const NavStyles = styled.nav`
   margin-top: 11px;
   height: 100px;
 
-  
   .logo {
     padding: 15px 0;
   }
@@ -93,6 +79,7 @@ export const NavIconsStyles = styled.nav`
   display: flex;
   grid-area: 1 / 7 / 2 / 8;
   gap: 10px;
+  margin: 5px;
 
   @media (max-width: 768px) {
     .mobile {
@@ -104,25 +91,12 @@ export const NavIconsStyles = styled.nav`
 export const UlStyles = styled.ul`
   list-style: none;
   display: flex;
+  justify-content: space-around;
   flex-flow: row nowrap;
   z-index: 1;
   align-items: center;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-
-  ul {
-    gap: 22px;
-    margin: 45px 41px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  li {
-    padding: 15px 26px;
-  }
+  justify-content: space-around;
+  padding: 0;
 
   a {
     font-size: 24px;
@@ -144,6 +118,7 @@ export const UlStyles = styled.ul`
 
     li {
       color: #fff;
+      line-height: 3;
     }
 
     li:nth-child(1) {

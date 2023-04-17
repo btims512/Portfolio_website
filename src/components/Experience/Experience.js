@@ -1,6 +1,6 @@
 import React from "react";
 import Zoom from "react-reveal/Zoom";
-import Roll from "react-reveal/Roll";
+import Fade from "react-reveal/Fade";
 
 import { Timeline, BoxText, Container } from "./ExperienceStyles";
 
@@ -10,9 +10,9 @@ import { experience } from "../../constants/constants";
 const Experience = () => {
   return (
     <Section nopadding id="experience">
-      <Roll left>
+      <Fade left>
         <SectionTitle main>Experience</SectionTitle>
-      </Roll>
+      </Fade>
       <br />
       <br />
       <br />

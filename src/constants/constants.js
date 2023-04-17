@@ -50,6 +50,16 @@ export const projects = [
     id: 5,
   },
   {
+    title: "South Carolina F.A.O.",
+    description:
+      "A site developed for the South Carolina Revenue and Fiscal Affairs Office providing data on the state's fiscal management and economic trends, with a modern and user-friendly design. All links have been removed and is purely aesthetic.",
+    image: "/images/SCRFAO.png",
+    tags: ["React", "API", "Tailwind", "CSS"],
+    source: "https://south-carolina-revenue.netlify.app/",
+    visit: "https://github.com/btims512/South-Carolina-Revenue-Offices",
+    id: 5,
+  },
+  {
     title: "Vinyl Reckoning",
     description:
       "A fun website designed for a podcast that discusses vinyl records mainly from the 2000's pop-punk era. Developed using react with styled-components and optimized with the 'mobile first' mentality.",
@@ -70,6 +80,16 @@ export const projects = [
     id: 7,
   },
   {
+    title: "David's WorkoutDB",
+    description:
+      "A website to support my friend in starting a workout routine. Includes workout plans, detailed exercise descriptions with a range of workout routines to choose from, and clear instructions and images to guide each exercise.",
+    image: "/images/workout-db.png",
+    tags: ["React", "CSS", "Emotion", "Rapid API"],
+    source: "https://davidsdb.netlify.app/",
+    visit: "https://github.com/btims512/fitness-app",
+    id: 8,
+  },
+  {
     title: "Exchange Rate$",
     description:
       "An app designed for simplicity, yet effectiveness. I personally used this app many times while traveling throughout Mexico for help with exchange rates. This app consumes exchangeratesapi.io and is constantly updated for latest rates.",
@@ -77,7 +97,7 @@ export const projects = [
     tags: ["React", "Node-Fetch"],
     source: "https://exchangeratesrus.netlify.app/",
     visit: "https://github.com/btims512/exchangeRate",
-    id: 8,
+    id: 9,
   },
   {
     title: "Chatthew",
@@ -87,7 +107,7 @@ export const projects = [
     tags: ["React", "JavaScript", "ChatEngine.io"],
     source: "https://chatthew.netlify.app/",
     visit: "https://github.com/btims512/Chat-App",
-    id: 9,
+    id: 10,
   },
   {
     title: "Find Dat Gif!",
@@ -97,7 +117,7 @@ export const projects = [
     tags: ["JavaScript", "EJS", "Node-Fetch", "CSS"],
     source: "https://find-dat-gif.onrender.com/",
     visit: "https://github.com/btims512/projects",
-    id: 10,
+    id: 11,
   },
 ];
 

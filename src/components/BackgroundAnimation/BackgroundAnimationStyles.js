@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
 export const ProfilePicStyles = styled.div`
-  max-width: 400px;
-  min-width: 190px;
-  width: 400px;
-
   #profile-pic {
     @media ${(props) => props.theme.breakpoints.md} {
       width: 289px;

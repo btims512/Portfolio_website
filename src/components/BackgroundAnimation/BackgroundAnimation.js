@@ -1,5 +1,4 @@
 import React from "react";
-import Zoom from "react-reveal/Zoom";
 import { Animation } from "./BackgroundAnimationStyles";
 
 const BackgroundAnimation = () => (

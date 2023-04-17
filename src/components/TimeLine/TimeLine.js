@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import Roll from "react-reveal/Roll";
+import Fade from "react-reveal/Fade";
 
 import {
   CarouselButton,
@@ -65,9 +65,9 @@ const Timeline = () => {
   return (
     <Section nopadding className="journey-section">
       <div id="journey">
-        <Roll left>
+        <Fade left>
           <SectionTitleJourney main>Journey</SectionTitleJourney>
-        </Roll>
+        </Fade>
         <br />
         <br />
         <div>

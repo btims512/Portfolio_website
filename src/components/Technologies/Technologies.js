@@ -12,15 +12,15 @@ import {
   ListParagraph,
   ListTitle,
 } from "./TechnologiesStyles";
-import Roll from "react-reveal/Roll";
+import Fade from 'react-reveal/Fade';
 import Bounce from "react-reveal/Bounce";
 
 const Technologies = () => (
   <Section nopadding id="tech">
     <br />
-    <Roll left>
+    <Fade left>
       <SectionTitle main>Technologies</SectionTitle>
-    </Roll>
+    </Fade>
     <List>
       <ListItem>
         <DiReact size="72px" color="#F46737" />

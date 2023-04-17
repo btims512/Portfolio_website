@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  margin: 20px;
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-left: 25px;
   }

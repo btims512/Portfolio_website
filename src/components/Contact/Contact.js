@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { ContactFormStyles, SuccessCheck } from "./ContactFormStyles";
 import { SectionTitle } from "../../styles/GlobalComponents";
-import Roll from "react-reveal/Roll";
+import Fade from "react-reveal/Fade";
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("xyyaedyo");
@@ -54,9 +54,9 @@ function ContactForm() {
   return (
     <ContactFormStyles id="contact">
       <div className="contact-container">
-        <Roll left>
+        <Fade left>
           <SectionTitle main>Contact</SectionTitle>
-        </Roll>
+        </Fade>
         <div className="form-container">
           <form onSubmit={onSubmit}>
             <div className="title-container">

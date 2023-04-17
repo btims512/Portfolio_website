@@ -10,10 +10,11 @@ export const GridContainer = styled.section`
   display: grid;
   padding: 3rem;
   place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(376px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(376px, 0fr));
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 46px;
   grid-row-gap: 25px;
+  justify-content: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     flex-direction: column;
