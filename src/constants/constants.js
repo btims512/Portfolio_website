@@ -112,11 +112,11 @@ export const projects = [
   {
     title: "Find Dat Gif!",
     description:
-      "A fun app to find the perfect GIF for how you're feeling, including a trending home page and random section if you're not quiet sure how you're feeling. Developed using Express and consuming Giphy's API via Node-Fetch.",
+      "A fun app to find the perfect GIF for how you're feeling, including a trending home page and random section if you're not quiet sure how you're feeling. Developed using React, SASS and consuming Giphy's API via Axios.",
     image: "/images/gif-logo.png",
-    tags: ["JavaScript", "EJS", "Node-Fetch", "CSS"],
-    source: "https://find-dat-gif.onrender.com/",
-    visit: "https://github.com/btims512/projects",
+    tags: ["React", "Sass/Scss", "Axios", "React Router"],
+    source: "https://find-dat-gif.netlify.app/",
+    visit: "https://github.com/btims512/find_dat_gif_2.0",
     id: 11,
   },
 ];
